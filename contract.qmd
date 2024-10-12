@@ -1,17 +1,12 @@
 # Team Project Contract
-**Project Title:** [Title of the final project]
+## Project Title: ***[Title TBD]***
 
 ### Team Members
-* Laura Phrasavath, 602-421-8757, lphrasav@arizona.edu
-
-* Srikanth Oruganti, 804-874-9062 , srioruganti@arizona.edu
-
-* Lucas Smith, 803-609-7586, lucassmith@arizona.edu
-
-* Maria Suresh
-
-* Rich Wooten
-
+* **Laura Phrasavath:** 602-421-8757, lphrasav@arizona.edu
+* **Srikanth Oruganti:** 804-874-9062 , srioruganti@arizona.edu
+* **Lucas Smith:** 803-609-7586, lucassmith@arizona.edu
+* **Maria Suresh**
+* **Rich Wooten**
 
 ## Project Overview
 **Project Description:** This project aims to utilize the tools and skills from this course to review, clean, and analyze a dataset in order to answer a research question. The project also aims to visualize data relevant to the research question to provide additional context. This will be supported by a team presentation of findings along with a final report.<br>
@@ -26,13 +21,13 @@
 
 ## Team Goals
 **Project Goals:**<br>
-1. Project Completion On-Time: Finish the project within the agreed upon timeframe.<br>
-2. Conflict Resolution: Resolve any team conflicts quickly and effectively to maintain a positive working environment.<br>
-3. Quality Assurance: Maintain high standards when executing each part of the project.<br>
-4. Effective Communication: Facilitate open and regular communication within team members.<br>
-5. Boost Collaboration: Foster teamwork by promoting collective problem-solving.<br>
-6. Sustainability: Ensure the project’s output or product has long-term benefits or use.<br>
-7. Knowledge Sharing: Encourage sharing skills and knowledge among team members.<br>
+1. **Project Completion On-Time:** Finish the project within the agreed upon timeframe.<br>
+2. **Conflict Resolution:** Resolve any team conflicts quickly and effectively to maintain a positive working environment.<br>
+3. **Quality Assurance:** Maintain high standards when executing each part of the project.<br>
+4. **Effective Communication:** Facilitate open and regular communication within team members.<br>
+5. **Boost Collaboration:** Foster teamwork by promoting collective problem-solving.<br>
+6. **Sustainability:** Ensure the project’s output or product has long-term benefits or use.<br>
+7. **Knowledge Sharing:** Encourage sharing skills and knowledge among team members.<br>
 
 **Learning Objectives:**<br> [What skills or knowledge each team member hopes to develop.]
 
@@ -52,7 +47,7 @@ Each team member is responsible for:<br>
 * Communicating openly and promptly if issues arise.
 
 ### Communication Plan
-* **Meeting Schedule:** Weekly on Saturdays at 1:00 PM PDT/1:00 PM MST/4:00 PM EDT via Slack.
+* **Meeting Schedule:** Weekly on Saturdays at 1:00 PM PDT/1:00 PM MST/4:00 PM EDT
 * **Primary Communication Platform:** Slack
 * **Decision-Making Process:** Decisions will be made by consensus; if a consensus cannot be reached, a vote will be taken.
 
@@ -62,7 +57,9 @@ Each team member is responsible for:<br>
 * **Exploratory Data Analysis:** Completed by [Date].
 * **Design of Visualizations:** Completed by [Date].
 * **Final Presentation and Report:** Completed by [Date].
-* **Task Assignments:** [Use a table to assign tasks to team members with due dates.]
+
+### Task Assignments 
+[Use a table to assign tasks to team members with due dates.]
 
 ### Accountability and Expectations
 * **Attendance Policy:** All team members are expected to attend scheduled meetings unless previously discussed.
