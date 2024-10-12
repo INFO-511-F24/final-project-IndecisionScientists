@@ -1,71 +1,87 @@
 # Team Project Contract
-Project Title: [Title of the final project]
+**Project Title:** [Title of the final project]
 
-### Team Members:
-Laura Phrasavath, 602-421-8757, lphrasav@arizona.edu
+### Team Members
+* Laura Phrasavath, 602-421-8757, lphrasav@arizona.edu
 
-Srikanth Oruganti, 804-874-9062 , srioruganti@arizona.edu
+* Srikanth Oruganti, 804-874-9062 , srioruganti@arizona.edu
 
-Lucas Smith, 803-609-7586, lucassmith@arizona.edu
+* Lucas Smith, 803-609-7586, lucassmith@arizona.edu
 
-[Name, Contact Information]
+* Maria Suresh
 
-[Name, Contact Information]
+* Rich Wooten
 
 
 ## Project Overview
-Project Description: [A brief overview of the project, including the main objectives and purpose.]
-Expected Deliverables: [List of specific outputs, such as final visualizations, reports, presentations.]
+**Project Description:** This project aims to utilize the tools and skills from this course to review, clean, and analyze a dataset in order to answer a research question. The project also aims to visualize data relevant to the research question to provide additional context. This will be supported by a team presentation of findings along with a final report.<br>
+
+**Expected Deliverables:**<br>
+1. Finalized team contract (`contract.qmd`)<br>
+2. Team member list (`about.qmd`)<br>
+3. Data set and research question proposal<br>
+4. Final write-up/report (including visualizations and if applicable, an appendix)<br>
+5. Presentation deck<br>
+6. Presentation video<br>
 
 ## Team Goals
-Project Goals: [A few bullet points outlining what the team aims to achieve.]
+**Project Goals:**<br>
+1. Project Completion On-Time: Finish the project within the agreed upon timeframe.<br>
+2. Conflict Resolution: Resolve any team conflicts quickly and effectively to maintain a positive working environment.<br>
+3. Quality Assurance: Maintain high standards when executing each part of the project.<br>
+4. Effective Communication: Facilitate open and regular communication within team members.<br>
+5. Boost Collaboration: Foster teamwork by promoting collective problem-solving.<br>
+6. Sustainability: Ensure the project’s output or product has long-term benefits or use.<br>
+7. Knowledge Sharing: Encourage sharing skills and knowledge among team members.<br>
 
-
-Learning Objectives: [What skills or knowledge each team member hopes to develop.]
+**Learning Objectives:**<br> [What skills or knowledge each team member hopes to develop.]
 
 ## Team Roles and Responsibilities
-Roles (change as needed):
-Project Manager: Srikanth Oruganti – Ensures timelines are met, organizes meetings, and manages communications.
-Data Analyst: Lucas Smith – Responsible for data cleaning, analysis, and exploratory visualizations.
-Visualization Specialist: [Name] – Designs the final visualizations and makes aesthetic choices.
-Documentation Lead: Laura Phrasavath – Keeps detailed notes, ensures all project decisions are documented, and handles the final report.
+* **Project Manager:** Srikanth Oruganti – Ensures timelines are met, organizes meetings, and manages communications.
+* **Data Analyst:** Lucas Smith – Responsible for data cleaning, analysis, and exploratory visualizations.
+* **Visualization Specialist:** Maria Suresh – Designs the final visualizations and makes aesthetic choices.
+* **Documentation Lead:** Laura Phrasavath – Keeps detailed notes, ensures all project decisions are documented, and handles the final report.
+* **QA Data Analyst & Presentation Author:** Rich Wooten – Provides additional assistance with data analysis and/or quality assurance and builds the final presentation slide deck.
 
-## Responsibilities:
-General Responsibilities: Each team member is responsible for:
-Participating actively in all meetings.
-Completing their assigned tasks on time.
-Communicating openly and promptly if issues arise.
-# Communication Plan
-Meeting Schedule: Weekly on [Day] at [Time] via [platform].
-Primary Communication Platform: [Platform, e.g., Slack].
-Decision-Making Process: Decisions will be made by consensus; if a consensus cannot be reached, a vote will be taken.
-# Work Plan and Timeline
-## Milestones:
-Data Collection and Cleaning: Completed by [Date].
-Exploratory Data Analysis: Completed by [Date].
-Design of Visualizations: Completed by [Date].
-Final Presentation and Report: Completed by [Date].
-Task Assignments: [Use a table to assign tasks to team members with due dates.]
-## Accountability and Expectations
-Attendance Policy: All team members are expected to attend scheduled meetings unless previously discussed.
-Quality of Work: All deliverables should be completed to a professional standard.
-Deadlines: All members are responsible for meeting deadlines. If someone cannot meet a deadline, they must notify the team in advance.
+### General Responsibilities
+Each team member is responsible for:<br>
+
+* Participating actively in all meetings.
+* Completing their assigned tasks on time.
+* Communicating openly and promptly if issues arise.
+
+### Communication Plan
+* **Meeting Schedule:** Weekly on [Day] at [Time] via Slack.
+* **Primary Communication Platform:** Slack
+* **Decision-Making Process:** Decisions will be made by consensus; if a consensus cannot be reached, a vote will be taken.
+
+## Work Plan and Timeline
+### Milestones
+* **Data Collection and Cleaning:** Completed by [Date].
+* **Exploratory Data Analysis:** Completed by [Date].
+* **Design of Visualizations:** Completed by [Date].
+* **Final Presentation and Report:** Completed by [Date].
+* **Task Assignments:** [Use a table to assign tasks to team members with due dates.]
+
+### Accountability and Expectations
+* **Attendance Policy:** All team members are expected to attend scheduled meetings unless previously discussed.
+* **Quality of Work:** All deliverables should be completed to a professional standard.
+* **Deadlines:** All members are responsible for meeting deadlines. If someone cannot meet a deadline, they must notify the team in advance.
 
 ## Conflict Resolution Plan
+If a conflict arises, team members will:
 
-Conflict Management: If a conflict arises, team members will:
-Discuss the issue openly during a team meeting.
-Attempt to resolve the issue through compromise.
-If the conflict persists, consult the project supervisor for guidance.
+* Discuss the issue openly during a team meeting.
+* Attempt to resolve the issue through compromise.
+* If the conflict persists, consult the project supervisor for guidance.
 
 ## Signatures
-
 By signing below, each team member agrees to the terms of this contract and commits to working together effectively and respectfully.
 
-[Name]: Lucas Smith                 Date: 10/11/24
-[Name]: ________________________    Date: ___________
-[Name]: ________________________    Date: ___________
-[Name]: ________________________    Date: ___________
-[Name]: ________________________    Date: ___________
+**Name:** Lucas Smith&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                 **Date:** 10/11/24<br>
+**Name:** Laura Phrasavath&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          **Date:** 10/11/24<br>
+**Name:** Srikanth Oruganti&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           **Date:** 10/11/24<br>
+**Name:** ____________________&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    **Date:** ___________<br>
+**Name:** ____________________&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    **Date:** ___________
 
 This template ensures that everyone understands their roles, responsibilities, and the expectations for the project. It can help prevent misunderstandings and promote effective teamwork throughout the project.
