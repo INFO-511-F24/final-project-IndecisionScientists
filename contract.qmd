@@ -29,7 +29,14 @@
 6. **Sustainability:** Ensure the project’s output or product has long-term benefits or use.<br>
 7. **Knowledge Sharing:** Encourage sharing skills and knowledge among team members.<br>
 
-**Learning Objectives:**<br> [What skills or knowledge each team member hopes to develop.]
+**Learning Objectives:**
+
+- **Effective Pipeline Utilization:** Create efficient and accurate data pipelines. 
+- **Pandas, Numpy experience:** Increase knowledge of common Python Data Science libraries.
+- **Model implementation and utilization:** Create well-performing machine learning models through a variety of means (linear, logistic).
+- **Effective storytelling through data:** Report findings to engage and convince audiences of your findings.
+
+
 
 ## Team Roles and Responsibilities
 ### Roles
