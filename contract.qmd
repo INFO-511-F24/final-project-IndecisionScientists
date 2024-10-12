@@ -37,6 +37,7 @@
 **Learning Objectives:**<br> [What skills or knowledge each team member hopes to develop.]
 
 ## Team Roles and Responsibilities
+### Roles
 * **Project Manager:** Srikanth Oruganti – Ensures timelines are met, organizes meetings, and manages communications.
 * **Data Analyst:** Lucas Smith – Responsible for data cleaning, analysis, and exploratory visualizations.
 * **Visualization Specialist:** Maria Suresh – Designs the final visualizations and makes aesthetic choices.
@@ -51,7 +52,7 @@ Each team member is responsible for:<br>
 * Communicating openly and promptly if issues arise.
 
 ### Communication Plan
-* **Meeting Schedule:** Weekly on [Day] at [Time] via Slack.
+* **Meeting Schedule:** Weekly on Saturdays at 1:00 PM PDT/1:00 PM MST/4:00 PM EDT via Slack.
 * **Primary Communication Platform:** Slack
 * **Decision-Making Process:** Decisions will be made by consensus; if a consensus cannot be reached, a vote will be taken.
 
