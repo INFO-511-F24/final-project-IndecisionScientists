@@ -66,7 +66,27 @@ Each team member is responsible for:<br>
 * **Final Presentation and Report:** Completed by '12/13/2024'.
 
 ### Task Assignments 
-[Use a table to assign tasks to team members with due dates.]
+"""
+Data Collection and Cleaning:	Data loading and review the data.	11/1/2024
+								Data discovery and high level analysis	
+								missing values	
+								Cleaning the data -python script	
+								Peer review	
+Exploratory Data Analysis :	Analysing numeric and categorical data	11/15/2024
+							Univarient analysis	
+							bi varient analysis	
+							fill the missing values and perform univarient and bivarient	
+							Peer review	
+Design of Visualizations :	Provide appropriate dashboard	11/29/2024
+							Peer review	
+							change the reports according the peer review	
+							Create multiple levels/ layers of data visualizations	
+							prepare the story depending on the data	
+Final Presentation and Report	Share knowledge of each owners	12/13/2024
+							Analyse the final result and perform a mock review	
+							Add references and futurespective thoughts	
+							Create appropriate template / reports
+"""                            
 
 ### Accountability and Expectations
 * **Attendance Policy:** All team members are expected to attend scheduled meetings unless previously discussed.
