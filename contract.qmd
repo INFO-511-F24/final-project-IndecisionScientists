@@ -60,10 +60,10 @@ Each team member is responsible for:<br>
 
 ## Work Plan and Timeline
 ### Milestones
-* **Data Collection and Cleaning:** Completed by [Date].
-* **Exploratory Data Analysis:** Completed by [Date].
-* **Design of Visualizations:** Completed by [Date].
-* **Final Presentation and Report:** Completed by [Date].
+* **Data Collection and Cleaning:** Completed by '11/1/2024'.
+* **Exploratory Data Analysis:** Completed by '11/15/2024'.
+* **Design of Visualizations:** Completed by '11/29/2024'.
+* **Final Presentation and Report:** Completed by '12/13/2024'.
 
 ### Task Assignments 
 [Use a table to assign tasks to team members with due dates.]
