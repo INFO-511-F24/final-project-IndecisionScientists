@@ -20,14 +20,14 @@
 6. Presentation video<br>
 
 ## Team Goals
-**Project Goals:**<br>
-1. **Project Completion On-Time:** Finish the project within the agreed upon timeframe.<br>
-2. **Conflict Resolution:** Resolve any team conflicts quickly and effectively to maintain a positive working environment.<br>
-3. **Quality Assurance:** Maintain high standards when executing each part of the project.<br>
-4. **Effective Communication:** Facilitate open and regular communication within team members.<br>
-5. **Boost Collaboration:** Foster teamwork by promoting collective problem-solving.<br>
-6. **Sustainability:** Ensure the project’s output or product has long-term benefits or use.<br>
-7. **Knowledge Sharing:** Encourage sharing skills and knowledge among team members.<br>
+**Project Goals:**
+
+- **Project Completion On-Time:** Finish the project within the agreed upon timeframe.
+- **Conflict Resolution:** Resolve any team conflicts quickly and effectively to maintain a positive working environment.
+- **Quality Assurance:** Maintain high standards when executing each part of the project.
+- **Effective Communication:** Facilitate open and regular communication within team members.
+- **Boost Collaboration:** Foster teamwork by promoting collective problem-solving.
+- **Knowledge Sharing:** Encourage sharing skills and knowledge among team members.
 
 **Learning Objectives:**
 
@@ -35,8 +35,6 @@
 - **Pandas, Numpy experience:** Increase knowledge of common Python Data Science libraries.
 - **Model implementation and utilization:** Create well-performing machine learning models through a variety of means (linear, logistic).
 - **Effective storytelling through data:** Report findings to engage and convince audiences of your findings.
-
-
 
 ## Team Roles and Responsibilities
 ### Roles
@@ -47,7 +45,7 @@
 * **QA Data Analyst & Presentation Author:** Rich Wooten – Provides additional assistance with data analysis and/or quality assurance and builds the final presentation slide deck.
 
 ### General Responsibilities
-Each team member is responsible for:<br>
+Each team member is responsible for:
 
 * Participating actively in all meetings.
 * Completing their assigned tasks on time.
@@ -60,33 +58,39 @@ Each team member is responsible for:<br>
 
 ## Work Plan and Timeline
 ### Milestones
-* **Data Collection and Cleaning:** Completed by '11/1/2024'.
-* **Exploratory Data Analysis:** Completed by '11/15/2024'.
-* **Design of Visualizations:** Completed by '11/29/2024'.
-* **Final Presentation and Report:** Completed by '12/13/2024'.
+* **Data Collection and Cleaning:** Completed by 11/1/2024.
+* **Exploratory Data Analysis:** Completed by 11/15/2024.
+* **Design of Visualizations:** Completed by 11/29/2024.
+* **Final Presentation and Report:** Completed by 12/13/2024.
 
 ### Task Assignments 
-"""
-Data Collection and Cleaning:	Data loading and review the data.	11/1/2024
-								Data discovery and high level analysis	
-								missing values	
-								Cleaning the data -python script	
-								Peer review	
-Exploratory Data Analysis :	Analysing numeric and categorical data	11/15/2024
-							Univarient analysis	
-							bi varient analysis	
-							fill the missing values and perform univarient and bivarient	
-							Peer review	
-Design of Visualizations :	Provide appropriate dashboard	11/29/2024
-							Peer review	
-							change the reports according the peer review	
-							Create multiple levels/ layers of data visualizations	
-							prepare the story depending on the data	
-Final Presentation and Report	Share knowledge of each owners	12/13/2024
-							Analyse the final result and perform a mock review	
-							Add references and futurespective thoughts	
-							Create appropriate template / reports
-"""                            
+Member-level task assignments and specific due dates TBD.
+
+| Milestone | Overall Due Date | Tasks |
+| --- | --- | --- |
+| Data Collection and Cleaning | 11/1/2024 | Data loading and review the data |
+|    |    | Data discovery and high level analysis |
+|    |    | Assess missing values |
+|    |    | Cleaning the data (Python script) |
+|    |    | Peer review |
+| Exploratory Data Analysis | 11/15/2024 | Analyzing numeric and categorical data |
+|    |    | Univariate analysis	|
+|    |    | Bivariate analysis |
+|    |    | Fill missing values and perform univariate and bivariate analyses |
+|    |    | Peer review	|
+| Design of Visualizations | 11/29/2024 | Draft potential dashboard	layout |
+|    |    | Peer review	|
+|    |    | Change the reports according to peer review	|
+|    |    | Create multiple levels/layers of data visualizations |
+|    |    | Prepare the story depending on the data	|
+| Final Presentation and Report	| 12/13/2024 | Share each role's knowledge with group |
+|    |    | Analyse the final result |
+|    |    | Draft final write-up/report |
+|    |    | Add references and futurespective thoughts |
+|    |    | Create presentation slide deck |
+|    |    | Finalize final write-up/report |
+|    |    | Practice final presentation |
+|    |    | Record/edit/upload video presentation or perform live presentation |                           
 
 ### Accountability and Expectations
 * **Attendance Policy:** All team members are expected to attend scheduled meetings unless previously discussed.
