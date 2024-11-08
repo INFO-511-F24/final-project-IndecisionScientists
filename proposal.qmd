@@ -1,11 +1,10 @@
 ---
-title: "Proposal title"
-subtitle: "Proposal"
+title: "INFO 511 - Group Final Project"
+subtitle: "Proposal: Milestone 2"
 author: 
-  - name: "Team Name"
+  - name: "Indecision Scientists"
     affiliations:
-      - name: "School of Information, University of Arizona"
-description: "Project description"
+      - name: "College of Information Science, University of Arizona"
 format:
   html:
     code-tools: true
@@ -35,44 +34,148 @@ import seaborn as sns
 
 For each data set:
 
-- Identify the source of the data.
+-   Identify the source of the data.
 
-- State when and how it was originally collected (by the original data curator, not necessarily how you found the data).
+-   State when and how it was originally collected (by the original data curator, not necessarily how you found the data).
 
-- Write a brief description of the observations.
+-   Write a brief description of the observations.
 
-- Address ethical concerns about the data, if any.
+-   Address ethical concerns about the data, if any.
 
 Make sure to load the data and use inline code for some of this information.
+
+1.  **Remote Work & Mental Health**
+
+    -   **Source:** Kaggle - <https://www.kaggle.com/datasets/waqi786/remote-work-and-mental-health>
+
+    -   **Collection date/method:** \[When/how originally collected by data curator\]
+
+    -   **Description:** \[Brief description of observations\]
+
+    -   **Ethical concerns:** \[Ethical concerns about data, if any\]
+
+        ```{python}
+        #Make sure to load the data and use inline code for some of this information.
+        ```
+
+2.  **U.S. Natural Resources Revenue (2003-2023)**
+
+    -   **Source:** Kaggle - <https://www.kaggle.com/datasets/saurabhbadole/u-s-natural-resources-revenue-2003-2023>
+
+    -   **Collection date/method:** \[When/how originally collected by data curator\]
+
+    -   **Description:** \[Brief description of observations\]
+
+    -   **Ethical concerns:** \[Ethical concerns about data, if any\]
+
+        ```{python}
+        #Make sure to load the data and use inline code for some of this information.
+        ```
+
+3.  **Global Earthquake Data**
+
+    -   **Source:** Kaggle - <https://www.kaggle.com/datasets/shreyasur965/recent-earthquakes>
+
+    -   **Collection date/method:** \[When/how originally collected by data curator\]
+
+    -   **Description:** \[Brief description of observations\]
+
+    -   **Ethical concerns:** \[Ethical concerns about data, if any\]
+
+        ```{python}
+        #Make sure to load the data and use inline code for some of this information.
+        ```
 
 ## Research Question
 
 Your research question should contain at least three variables, and should be a mix of categorical and quantitative variables. When writing a research question, please think about the following:
 
-- What is your target population?
+-   What is your target population?
 
-- Is the question original?
+-   Is the question original?
 
-- Can the question be answered?
+-   Can the question be answered?
 
 For each data set, include the following:
 
-- A well formulated research question. (You may include more than one research question if you want to receive feedback on different ideas for your project. However, one per data set is required.)
+-   A well formulated research question. (You may include more than one research question if you want to receive feedback on different ideas for your project. However, one per data set is required.)
 
-- Statement on why this question is important.
+-   Statement on why this question is important.
 
-- A description of the research topic along with a concise statement of your hypotheses on this topic.
+-   A description of the research topic along with a concise statement of your hypotheses on this topic.
 
-- Identify the types of variables in your research question. Categorical? Quantitative?
+-   Identify the types of variables in your research question. Categorical? Quantitative?
+
+1.  **Remote Work & Mental Health**
+
+    -   **Research question:** \[A well formulated research question requiring at least 3 variables with a mix of categorical and quantitative data types\]
+    -   **Importance:** \[Statement on why this question is important\]
+    -   **Description:** \[A description of the research topic along with a concise statement of your hypotheses on this topic\]
+    -   **Variable types:** \[Identify the types of variables in your research question. Categorical? Quantitative?\]
+
+2.  **U.S. Natural Resources Revenue (2003-2023)**
+
+    -   **Research question:** \[A well formulated research question requiring at least 3 variables with a mix of categorical and quantitative data types\]
+    -   **Importance:** \[Statement on why this question is important\]
+    -   **Description:** \[A description of the research topic along with a concise statement of your hypotheses on this topic\]
+    -   **Variable types:** \[Identify the types of variables in your research question. Categorical? Quantitative?\]
+
+3.  **Global Earthquake Data**
+
+    -   **Research question:** \[A well formulated research question requiring at least 3 variables with a mix of categorical and quantitative data types\]
+
+    -   **Importance:** \[Statement on why this question is important\]
+
+    -   **Description:** \[A description of the research topic along with a concise statement of your hypotheses on this topic\]
+
+    -   **Variable types:** \[Identify the types of variables in your research question. Categorical? Quantitative?\]
 
 ## Glimpse of data
 
 For each data set:
 
-- Place the file containing your data in the data folder of the project repo.
+-   Place the file containing your data in the data folder of the project repo.
 
-- Use the `.head()` and `.info()` functions to provide a glimpse of the data set.
+-   Use the `.head()` and `.info()` functions to provide a glimpse of the data set.
+
+1.  **Remote Work & Mental Health**
+
+    ```{python}
+    #use head() and info() after loading data set
+    ```
+
+2.  **U.S. Natural Resources Revenue (2003-2023)**
+
+    ```{python}
+    #use head() and info() after loading data set
+    ```
+
+3.  **Global Earthquake Data**
+
+    ```{python}
+    #use head() and info() after loading data set
+    ```
 
 ## Analysis plan
 
 -   A plan for answering each of the questions including the variables involved, variables to be created (if any), external data to be merged in (if any).
+
+1.  **Remote Work & Mental Health**
+
+    -   **Plan:** \[A plan for answering the research question(s) including the variables involved\]
+    -   **Variables to be created:** \[Variables to be created (if any)\]
+    -   **External data:** \[External data to be merged in (if any)\]
+
+2.  **U.S. Natural Resources Revenue (2003-2023)**
+
+    -   **Plan:** \[A plan for answering the research question(s) including the variables involved\]
+    -   **Variables to be created:** \[Variables to be created (if any)\]
+    -   **External data:** \[External data to be merged in (if any)\]
+
+3.  **Global Earthquake Data**
+
+    -   **Plan:** \[A plan for answering the research question(s) including the variables involved\]
+
+    -   **Variables to be created:** \[Variables to be created (if any)\]
+
+    -   **External data:** \[External data to be merged in (if any)\]

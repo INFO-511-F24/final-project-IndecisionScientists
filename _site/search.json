@@ -2,37 +2,37 @@
   {
     "objectID": "proposal.html",
     "href": "proposal.html",
-    "title": "Proposal title",
+    "title": "INFO 511 - Group Final Project",
     "section": "",
     "text": "import numpy as np\nimport seaborn as sns"
   },
   {
     "objectID": "proposal.html#introduction-and-data",
     "href": "proposal.html#introduction-and-data",
-    "title": "Proposal title",
+    "title": "INFO 511 - Group Final Project",
     "section": "Introduction and data",
-    "text": "Introduction and data\nFor each data set:\n\nIdentify the source of the data.\nState when and how it was originally collected (by the original data curator, not necessarily how you found the data).\nWrite a brief description of the observations.\nAddress ethical concerns about the data, if any.\n\nMake sure to load the data and use inline code for some of this information."
+    "text": "Introduction and data\nFor each data set:\n\nIdentify the source of the data.\nState when and how it was originally collected (by the original data curator, not necessarily how you found the data).\nWrite a brief description of the observations.\nAddress ethical concerns about the data, if any.\n\nMake sure to load the data and use inline code for some of this information.\n\nRemote Work & Mental Health\n\nSource: Kaggle - https://www.kaggle.com/datasets/waqi786/remote-work-and-mental-health\nCollection date/method: [When/how originally collected by data curator]\nDescription: [Brief description of observations]\nEthical concerns: [Ethical concerns about data, if any]\n\n#Make sure to load the data and use inline code for some of this information.\n\n\nU.S. Natural Resources Revenue (2003-2023)\n\nSource: Kaggle - https://www.kaggle.com/datasets/saurabhbadole/u-s-natural-resources-revenue-2003-2023\nCollection date/method: [When/how originally collected by data curator]\nDescription: [Brief description of observations]\nEthical concerns: [Ethical concerns about data, if any]\n\n#Make sure to load the data and use inline code for some of this information.\n\n\nGlobal Earthquake Data\n\nSource: Kaggle - https://www.kaggle.com/datasets/shreyasur965/recent-earthquakes\nCollection date/method: [When/how originally collected by data curator]\nDescription: [Brief description of observations]\nEthical concerns: [Ethical concerns about data, if any]\n\n#Make sure to load the data and use inline code for some of this information."
   },
   {
     "objectID": "proposal.html#research-question",
     "href": "proposal.html#research-question",
-    "title": "Proposal title",
+    "title": "INFO 511 - Group Final Project",
     "section": "Research Question",
-    "text": "Research Question\nYour research question should contain at least three variables, and should be a mix of categorical and quantitative variables. When writing a research question, please think about the following:\n\nWhat is your target population?\nIs the question original?\nCan the question be answered?\n\nFor each data set, include the following:\n\nA well formulated research question. (You may include more than one research question if you want to receive feedback on different ideas for your project. However, one per data set is required.)\nStatement on why this question is important.\nA description of the research topic along with a concise statement of your hypotheses on this topic.\nIdentify the types of variables in your research question. Categorical? Quantitative?"
+    "text": "Research Question\nYour research question should contain at least three variables, and should be a mix of categorical and quantitative variables. When writing a research question, please think about the following:\n\nWhat is your target population?\nIs the question original?\nCan the question be answered?\n\nFor each data set, include the following:\n\nA well formulated research question. (You may include more than one research question if you want to receive feedback on different ideas for your project. However, one per data set is required.)\nStatement on why this question is important.\nA description of the research topic along with a concise statement of your hypotheses on this topic.\nIdentify the types of variables in your research question. Categorical? Quantitative?\n\n\nRemote Work & Mental Health\n\nResearch question: [A well formulated research question requiring at least 3 variables with a mix of categorical and quantitative data types]\nImportance: [Statement on why this question is important]\nDescription: [A description of the research topic along with a concise statement of your hypotheses on this topic]\nVariable types: [Identify the types of variables in your research question. Categorical? Quantitative?]\n\nU.S. Natural Resources Revenue (2003-2023)\n\nResearch question: [A well formulated research question requiring at least 3 variables with a mix of categorical and quantitative data types]\nImportance: [Statement on why this question is important]\nDescription: [A description of the research topic along with a concise statement of your hypotheses on this topic]\nVariable types: [Identify the types of variables in your research question. Categorical? Quantitative?]\n\nGlobal Earthquake Data\n\nResearch question: [A well formulated research question requiring at least 3 variables with a mix of categorical and quantitative data types]\nImportance: [Statement on why this question is important]\nDescription: [A description of the research topic along with a concise statement of your hypotheses on this topic]\nVariable types: [Identify the types of variables in your research question. Categorical? Quantitative?]"
   },
   {
     "objectID": "proposal.html#glimpse-of-data",
     "href": "proposal.html#glimpse-of-data",
-    "title": "Proposal title",
+    "title": "INFO 511 - Group Final Project",
     "section": "Glimpse of data",
-    "text": "Glimpse of data\nFor each data set:\n\nPlace the file containing your data in the data folder of the project repo.\nUse the .head() and .info() functions to provide a glimpse of the data set."
+    "text": "Glimpse of data\nFor each data set:\n\nPlace the file containing your data in the data folder of the project repo.\nUse the .head() and .info() functions to provide a glimpse of the data set.\n\n\nRemote Work & Mental Health\n\n#use head() and info() after loading data set\n\nU.S. Natural Resources Revenue (2003-2023)\n\n#use head() and info() after loading data set\n\nGlobal Earthquake Data\n\n#use head() and info() after loading data set"
   },
   {
     "objectID": "proposal.html#analysis-plan",
     "href": "proposal.html#analysis-plan",
-    "title": "Proposal title",
+    "title": "INFO 511 - Group Final Project",
     "section": "Analysis plan",
-    "text": "Analysis plan\n\nA plan for answering each of the questions including the variables involved, variables to be created (if any), external data to be merged in (if any)."
+    "text": "Analysis plan\n\nA plan for answering each of the questions including the variables involved, variables to be created (if any), external data to be merged in (if any).\n\n\nRemote Work & Mental Health\n\nPlan: [A plan for answering the research question(s) including the variables involved]\nVariables to be created: [Variables to be created (if any)]\nExternal data: [External data to be merged in (if any)]\n\nU.S. Natural Resources Revenue (2003-2023)\n\nPlan: [A plan for answering the research question(s) including the variables involved]\nVariables to be created: [Variables to be created (if any)]\nExternal data: [External data to be merged in (if any)]\n\nGlobal Earthquake Data\n\nPlan: [A plan for answering the research question(s) including the variables involved]\nVariables to be created: [Variables to be created (if any)]\nExternal data: [External data to be merged in (if any)]"
   },
   {
     "objectID": "index.html",
