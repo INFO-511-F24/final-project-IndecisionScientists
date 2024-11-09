@@ -23,6 +23,7 @@ jupyter: python3
 #| message: false
 import numpy as np
 import seaborn as sns
+import pandas as pd
 ```
 
 ## Introduction and data
@@ -83,7 +84,7 @@ Make sure to load the data and use inline code for some of this information.
     -   **Ethical concerns:** \[Ethical concerns about data, if any\]
 
         ```{python}
-        #Make sure to load the data and use inline code for some of this information.
+        quakes = pd.read_csv("data/earthquakes.csv")
         ```
 
 ## Research Question
@@ -122,13 +123,19 @@ For each data set, include the following:
 
 3.  **Global Earthquake Data**
 
-    -   **Research question:** \[A well formulated research question requiring at least 3 variables with a mix of categorical and quantitative data types\]
+    -   **Research question:** Can we predict the impact and measure of an earthquake based on various factors, such as location, date, time, magnitude, or depth?
 
-    -   **Importance:** \[Statement on why this question is important\]
+    -   **Importance:** It would be nice to predict the impact of an earthquake to give estimations on recovery times/efforts needed by local governments if they we can accurately predict the impact.
 
-    -   **Description:** \[A description of the research topic along with a concise statement of your hypotheses on this topic\]
+    -   **Description:** This topic covers earthquake data from around the world. Our hypothesis would be: you can predict the measure of impact an earthquake has based on various features of an earthquake.
 
-    -   **Variable types:** \[Identify the types of variables in your research question. Categorical? Quantitative?\]
+    -   **Variable types:**
+
+        -   Time and date: object
+
+        -   Magnitude, depth, felt, cdi, mmi, sig, rms, gap: number
+
+        -   Continent, country, alert: categorical
 
 ## Glimpse of data
 
@@ -153,8 +160,12 @@ For each data set:
 3.  **Global Earthquake Data**
 
     ```{python}
-    #use head() and info() after loading data set
+    quakes.head()
     ```
+
+```{python}
+quakes.info()
+```
 
 ## Analysis plan
 
@@ -174,8 +185,8 @@ For each data set:
 
 3.  **Global Earthquake Data**
 
-    -   **Plan:** \[A plan for answering the research question(s) including the variables involved\]
+    -   **Plan:** We will need to be more familiar with the type of earthquake features (e.g., cdi, rms, gap) to understand the features that are available for us to use. We will need to take a closer look at the data and then filter out any unnecessary features, and conduct data visualization.
 
-    -   **Variables to be created:** \[Variables to be created (if any)\]
+    -   **Variables to be created:** Currently there are no variables expected to be created.
 
-    -   **External data:** \[External data to be merged in (if any)\]
+    -   **External data:** No external data to be merged
