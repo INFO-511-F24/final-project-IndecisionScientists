@@ -28,11 +28,6 @@ import pandas as pd
 
 ## Introduction and data
 
-```{python}
-#| label: load-dataset
-#| message: false
-```
-
 For each data set:
 
 -   Identify the source of the data.
@@ -56,7 +51,7 @@ Make sure to load the data and use inline code for some of this information.
     -   **Ethical concerns:** \[Ethical concerns about data, if any\]
 
         ```{python}
-        #Make sure to load the data and use inline code for some of this information.
+        remoteMH = pd.read_csv("data/RemoteWork_MentalHealth.csv")
         ```
 
 2.  **U.S. Natural Resources Revenue (2003-2023)**
@@ -70,7 +65,7 @@ Make sure to load the data and use inline code for some of this information.
     -   **Ethical concerns:** \[Ethical concerns about data, if any\]
 
         ```{python}
-        #Make sure to load the data and use inline code for some of this information.
+        natResRev = pd.read_csv("data/us_natResources_revenue.csv")
         ```
 
 3.  **Global Earthquake Data**
@@ -139,22 +134,24 @@ For each data set, include the following:
 
 ## Glimpse of data
 
-For each data set:
-
--   Place the file containing your data in the data folder of the project repo.
-
--   Use the `.head()` and `.info()` functions to provide a glimpse of the data set.
-
 1.  **Remote Work & Mental Health**
 
     ```{python}
-    #use head() and info() after loading data set
+    remoteMH.head()
+    ```
+
+    ```{python}
+    remoteMH.info()
     ```
 
 2.  **U.S. Natural Resources Revenue (2003-2023)**
 
     ```{python}
-    #use head() and info() after loading data set
+    natResRev.head()
+    ```
+
+    ```{python}
+    natResRev.info()
     ```
 
 3.  **Global Earthquake Data**
@@ -163,9 +160,9 @@ For each data set:
     quakes.head()
     ```
 
-```{python}
-quakes.info()
-```
+    ```{python}
+    quakes.info()
+    ```
 
 ## Analysis plan
 
