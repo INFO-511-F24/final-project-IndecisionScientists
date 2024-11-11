@@ -44,11 +44,11 @@ Make sure to load the data and use inline code for some of this information.
 
     -   **Source:** Kaggle - <https://www.kaggle.com/datasets/waqi786/remote-work-and-mental-health>
 
-    -   **Collection date/method:** \[When/how originally collected by data curator\]
+    -   **Collection date/method:** Data uploaded in September 2024 and collected from a variety of sources via the digital distribution of a structured questionnaire that anonymized responses on social media platforms, professional networks, and online forums
 
-    -   **Description:** \[Brief description of observations\]
+    -   **Description:** This dataset comprises 5,000 employee records worldwide with details about work location, stress levels, mental health resource access, job satisfaction, and demographics (age, gender, industry, etc.)
 
-    -   **Ethical concerns:** \[Ethical concerns about data, if any\]
+    -   **Ethical concerns:** N/A
 
         ```{python}
         remoteMH = pd.read_csv("data/RemoteWork_MentalHealth.csv")
