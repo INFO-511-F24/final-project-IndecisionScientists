@@ -12,6 +12,6 @@ This project was developed by the `Indecision Scientists` team For [INFO 511 - F
 
 -   Lucas Smith: MS DS, Year 1; BA in Computer Science
 
--   Maria Suresh: MS DS, Year 1
+-   Maria Nikitha Suresh: MS DS, Year 2.
 
 -   Rich Wooten: MS DS, Year 1
