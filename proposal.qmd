@@ -72,11 +72,11 @@ Make sure to load the data and use inline code for some of this information.
 
     -   **Source:** Kaggle - <https://www.kaggle.com/datasets/shreyasur965/recent-earthquakes>
 
-    -   **Collection date/method:** \[When/how originally collected by data curator\]
+    -   **Collection date/method:** Data collected using the *EveryEarthquake* API from *RapidAPI* with earthquakes from 6/23/2023 through 9/18/2024
 
-    -   **Description:** \[Brief description of observations\]
+    -   **Description:** This dataset comprises attributes and other details of 1,137 earthquakes from around the world including magnitude, location, date, time, and other measurements used in seismology
 
-    -   **Ethical concerns:** \[Ethical concerns about data, if any\]
+    -   **Ethical concerns:** N/A
 
         ```{python}
         quakes = pd.read_csv("data/earthquakes.csv")

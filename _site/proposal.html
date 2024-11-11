@@ -4872,7 +4872,7 @@ vertical-align: -.125em;
 <li><p><strong>Collection date/method:</strong> [When/how originally collected by data curator]</p></li>
 <li><p><strong>Description:</strong> [Brief description of observations]</p></li>
 <li><p><strong>Ethical concerns:</strong> [Ethical concerns about data, if any]</p>
-<div id="9692e391" class="cell" data-execution_count="2">
+<div id="0a4436aa" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a>remoteMH <span class="op">=</span> pd.read_csv(<span class="st">&quot;data/RemoteWork_MentalHealth.csv&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></li>
 </ul></li>
@@ -4882,17 +4882,17 @@ vertical-align: -.125em;
 <li><p><strong>Collection date/method:</strong> [When/how originally collected by data curator]</p></li>
 <li><p><strong>Description:</strong> [Brief description of observations]</p></li>
 <li><p><strong>Ethical concerns:</strong> [Ethical concerns about data, if any]</p>
-<div id="1876a26f" class="cell" data-execution_count="3">
+<div id="7910bb86" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>natResRev <span class="op">=</span> pd.read_csv(<span class="st">&quot;data/us_natResources_revenue.csv&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></li>
 </ul></li>
 <li><p><strong>Global Earthquake Data</strong></p>
 <ul>
 <li><p><strong>Source:</strong> Kaggle - <a href="https://www.kaggle.com/datasets/shreyasur965/recent-earthquakes" class="uri">https://www.kaggle.com/datasets/shreyasur965/recent-earthquakes</a></p></li>
-<li><p><strong>Collection date/method:</strong> [When/how originally collected by data curator]</p></li>
-<li><p><strong>Description:</strong> [Brief description of observations]</p></li>
-<li><p><strong>Ethical concerns:</strong> [Ethical concerns about data, if any]</p>
-<div id="98ffe6b3" class="cell" data-execution_count="4">
+<li><p><strong>Collection date/method:</strong> Data collected using the <em>EveryEarthquake</em> API from <em>RapidAPI</em> with earthquakes from 6/23/2023 through 9/18/2024</p></li>
+<li><p><strong>Description:</strong> This dataset comprises attributes and other details of 1,137 earthquakes from around the world including magnitude, location, date, time, and other measurements used in seismology</p></li>
+<li><p><strong>Ethical concerns:</strong> N/A</p>
+<div id="95f228fd" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a>quakes <span class="op">=</span> pd.read_csv(<span class="st">&quot;data/earthquakes.csv&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></li>
 </ul></li>
@@ -4946,7 +4946,7 @@ vertical-align: -.125em;
 <h2 class="anchored" data-anchor-id="glimpse-of-data">Glimpse of data</h2>
 <ol type="1">
 <li><p><strong>Remote Work &amp; Mental Health</strong></p>
-<div id="d5fd9e96" class="cell" data-execution_count="5">
+<div id="a654f5b8" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a>remoteMH.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="5">
 <div>
@@ -5100,7 +5100,7 @@ vertical-align: -.125em;
 </div>
 </div>
 </div>
-<div id="fa1cd834" class="cell" data-execution_count="6">
+<div id="63cb9dd6" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a>remoteMH.info()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
@@ -5133,7 +5133,7 @@ memory usage: 781.4+ KB</code></pre>
 </div>
 </div></li>
 <li><p><strong>U.S. Natural Resources Revenue (2003-2023)</strong></p>
-<div id="086ac753" class="cell" data-execution_count="7">
+<div id="67a08633" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a>natResRev.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="7">
 <div>
@@ -5239,7 +5239,7 @@ memory usage: 781.4+ KB</code></pre>
 </div>
 </div>
 </div>
-<div id="5881893f" class="cell" data-execution_count="8">
+<div id="8546d879" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a>natResRev.info()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
@@ -5264,7 +5264,7 @@ memory usage: 4.4+ MB</code></pre>
 </div>
 </div></li>
 <li><p><strong>Global Earthquake Data</strong></p>
-<div id="c402cd31" class="cell" data-execution_count="9">
+<div id="7c956a88" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1"></a>quakes.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="9">
 <div>
@@ -5425,7 +5425,7 @@ memory usage: 4.4+ MB</code></pre>
 </div>
 </div>
 </div>
-<div id="aab6f43c" class="cell" data-execution_count="10">
+<div id="d89400e1" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1"></a>quakes.info()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
@@ -6242,11 +6242,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb14-74"><a href="#cb14-74"></a></span>
 <span id="cb14-75"><a href="#cb14-75"></a><span class="ss">    -   </span>**Source:** Kaggle - <span class="ot">&lt;https://www.kaggle.com/datasets/shreyasur965/recent-earthquakes&gt;</span></span>
 <span id="cb14-76"><a href="#cb14-76"></a></span>
-<span id="cb14-77"><a href="#cb14-77"></a><span class="ss">    -   </span>**Collection date/method:** <span class="sc">\[</span>When/how originally collected by data curator<span class="sc">\]</span></span>
+<span id="cb14-77"><a href="#cb14-77"></a><span class="ss">    -   </span>**Collection date/method:** Data collected using the *EveryEarthquake* API from *RapidAPI* with earthquakes from 6/23/2023 through 9/18/2024</span>
 <span id="cb14-78"><a href="#cb14-78"></a></span>
-<span id="cb14-79"><a href="#cb14-79"></a><span class="ss">    -   </span>**Description:** <span class="sc">\[</span>Brief description of observations<span class="sc">\]</span></span>
+<span id="cb14-79"><a href="#cb14-79"></a><span class="ss">    -   </span>**Description:** This dataset comprises attributes and other details of 1,137 earthquakes from around the world including magnitude, location, date, time, and other measurements used in seismology</span>
 <span id="cb14-80"><a href="#cb14-80"></a></span>
-<span id="cb14-81"><a href="#cb14-81"></a><span class="ss">    -   </span>**Ethical concerns:** <span class="sc">\[</span>Ethical concerns about data, if any<span class="sc">\]</span></span>
+<span id="cb14-81"><a href="#cb14-81"></a><span class="ss">    -   </span>**Ethical concerns:** N/A</span>
 <span id="cb14-82"><a href="#cb14-82"></a></span>
 <span id="cb14-83"><a href="#cb14-83"></a>        <span class="in">```{python}</span></span>
 <span id="cb14-84"><a href="#cb14-84"></a><span class="in">        quakes = pd.read_csv(&quot;data/earthquakes.csv&quot;)</span></span>
