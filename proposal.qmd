@@ -58,11 +58,11 @@ Make sure to load the data and use inline code for some of this information.
 
     -   **Source:** Kaggle - <https://www.kaggle.com/datasets/saurabhbadole/u-s-natural-resources-revenue-2003-2023>
 
-    -   **Collection date/method:** \[When/how originally collected by data curator\]
+    -   **Collection date/method:** Data spanning 2003 to present collected and managed by the Department of the Interior's Office of Natural Resources Revenue
 
-    -   **Description:** \[Brief description of observations\]
+    -   **Description:** This dataset comprises revenue generated from and attributes of natural U.S. resources such as federal lands, waters, and indigenous lands. Data includes land classification, lease types, revenue types, and commodities/products that are extracted from the natural resources.
 
-    -   **Ethical concerns:** \[Ethical concerns about data, if any\]
+    -   **Ethical concerns:** Revenue data for indigenous/Native American resources was only reported at a national level to protect private/sensitive information
 
         ```{python}
         natResRev = pd.read_csv("data/us_natResources_revenue.csv")
