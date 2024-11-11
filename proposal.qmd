@@ -101,8 +101,10 @@ For each data set, include the following:
 
     -   **Research question:** In what ways have revenue patterns from renewable versus non-renewable resource extraction (e.g., geothermal, oil, and gas) evolved over the past two decades, and how does the interaction between resource type and land category (onshore versus offshore) influence these revenue trends across different regions?
     -   **Importance:** This question leverages the dataset’s extensive time span and diverse resource categories, addressing the critical topic of renewable versus non-renewable energy. It enables an exploration of long-term trends, analysis by land type, and comparisons across revenue sources, providing a relevant perspective on the economics of sustainable energy.
-    -   **Description:** \[A description of the research topic along with a concise statement of your hypotheses on this topic\]
-    -   **Variable types:** \[Identify the types of variables in your research question. Categorical? Quantitative?\]
+    -   **Description:** This research examines revenue trends from renewable and non-renewable resources on federal and Native American lands over the past two decades, focusing on differences between onshore and offshore land categories. The study aims to reveal whether renewable resource revenue, particularly from geothermal energy, has grown over time relative to non-renewables like oil and gas. The hypothesis is that revenue from renewable resources has increased over time, while offshore lands generate higher revenue from non-renewables, and onshore lands contribute more to renewables. Additionally, non-renewable revenue remains high but fluctuates due to market and policy changes.
+    -   **Variable types:** 
+        -  Categorical: Commodity, Land Category 
+        -  Quantitative: Revenue, Calendar Year
 
 3.  **Global Earthquake Data**
 
