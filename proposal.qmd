@@ -74,13 +74,17 @@ import pandas as pd
 
 1.  **Remote Work & Mental Health**
 
-    -   **Research question:** \[A well formulated research question requiring at least 3 variables with a mix of categorical and quantitative data types\]
+    -   **Research question:** How are employees' stress levels and mental health conditions related to work locations and employees' professional experience levels across age groups? Are changes in productivity associated with changes in physical activity and access to mental health resources?
 
-    -   **Importance:** \[Statement on why this question is important\]
+    -   **Importance:** Examining the relationships between the personal well-being of employees, increases in stress, decreases in productivity, and their working locations/arrangements can provide the foundation for future predictive studies/models that are more relevant than ever during a time when employers are determining whether returning employees to central offices presents greater benefit than keeping a hybrid or remote arrangement.
 
-    -   **Description:** \[A description of the research topic along with a concise statement of your hypotheses on this topic\]
+    -   **Description:** This research delves into vocational psychology and its intersection with how technology has changed the work landscape. With the 2020 pandemic forcing employers to adopt remote and hybrid arrangements and post-pandemic "recovery" in the present day, discussions have evolved from the creative ways companies have been able to continue operation while staying home and quarantined to whether it is more beneficial for employees to return to social corporate settings (with a convenient benefit of preventing company losses due to expensive corporate real estate remaining empty). The hypotheses for this study are that younger employees have better mental health in hybrid and remote work locations than older employees (especially those with more years of experience since perhaps these employees are more used to in-person working environments), and increases in physical activity and access to mental health resources are associated with positive changes in productivity.
 
-    -   **Variable types:** \[Identify the types of variables in your research question. Categorical? Quantitative?\]
+    -   **Variable types:**
+
+        -   **Categorical:** Work location, Stress level, Mental health condition, Access to mental health resources, Productivity change, Physical activity
+
+        -   **Quantitative:** Age, Years of experience
 
 2.  **U.S. Natural Resources Revenue (2003-2023)**
 
@@ -92,7 +96,7 @@ import pandas as pd
 
     -   **Variable types:**
 
-        -   **Categorical:** Land Class, Land Category, State, County, FIPS Code, Offshore Region, Revenue Type, Mineral Lease Type, Commodity, Product
+        -   **Categorical:** Land Category, State, Commodity
 
         -   **Quantitative:** Revenue, Calendar Year
 
@@ -148,9 +152,11 @@ import pandas as pd
 
 1.  **Remote Work & Mental Health**
 
-    -   **Plan:** \[A plan for answering the research question(s) including the variables involved\]
-    -   **Variables to be created:** \[Variables to be created (if any)\]
-    -   **External data:** \[External data to be merged in (if any)\]
+    -   **Plan:** We will need to explore the unique values of some variables to determine the best way to group them in new variables for more generalized comparisons (i.e., age group comparisons, mental health conditions reported versus none reported, etc.). Once data wrangling is complete with the required additional variables created, we can visualize the data with various graphs to determine whether there are relationships among the variables selected.
+
+    -   **Variables to be created:** The ages of employees may need to be binned into age group categories. Similarly, the years of experience for employees may need to be binned into larger experience categories. A new binary variable will also be created to denote whether or not a mental health condition was reported.
+
+    -   **External data:** No external data to be merged.
 
 2.  **U.S. Natural Resources Revenue (2003-2023)**
 
