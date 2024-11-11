@@ -154,11 +154,11 @@ import pandas as pd
 
 2.  **U.S. Natural Resources Revenue (2003-2023)**
 
-    -   **Plan:** We will first need to identify what natural resources are considered renewable versus non-renewable and find external data from the U.S. that has revenue data for renewable resources for comparison. Data wrangling will be required to create variables in the external data that match the variables that will be used in this data set. Additionally, variables will be created to group states into geographic regions so that we can compare the Revenue patterns across Calendar Years between Commodity types, Land Category, and geographic regions. The comparisons will primarily be done by constructing a variety of data visualizations.
+    -   **Plan:** Data wrangling will initially be required to create variables that group U.S. states into geographic regions so that we can compare the Revenue patterns across Calendar Years between Commodity types, Land Category, and geographic regions. We will also group renewable resources versus non-renewable resources. The comparisons will then primarily be done by constructing a variety of data visualizations.
 
     -   **Variables to be created:** A categorical variable will be needed to identify whether a resource is considered renewable or non-renewable. Another categorical variable would be created to identify which geographic region a state that has a particular resource belongs to (e.g., Texas would be in the Southern region, etc.).
 
-    -   **External data:** Since this data set focuses primarily on natural resources that are non-renewable, we will need to merge revenue data for renewable resources within the U.S.
+    -   **External data:** No external data to be merged.
 
 3.  **Global Earthquake Data**
 
