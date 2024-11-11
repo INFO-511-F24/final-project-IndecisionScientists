@@ -28,18 +28,6 @@ import pandas as pd
 
 ## Introduction and data
 
-For each data set:
-
--   Identify the source of the data.
-
--   State when and how it was originally collected (by the original data curator, not necessarily how you found the data).
-
--   Write a brief description of the observations.
-
--   Address ethical concerns about the data, if any.
-
-Make sure to load the data and use inline code for some of this information.
-
 1.  **Remote Work & Mental Health**
 
     -   **Source:** Kaggle - <https://www.kaggle.com/datasets/waqi786/remote-work-and-mental-health>
@@ -165,8 +153,6 @@ For each data set, include the following:
     ```
 
 ## Analysis plan
-
--   A plan for answering each of the questions including the variables involved, variables to be created (if any), external data to be merged in (if any).
 
 1.  **Remote Work & Mental Health**
 
