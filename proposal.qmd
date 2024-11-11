@@ -99,8 +99,8 @@ For each data set, include the following:
 
 2.  **U.S. Natural Resources Revenue (2003-2023)**
 
-    -   **Research question:** \[In what ways have revenue patterns from renewable versus non-renewable resource extraction (e.g., geothermal, oil, and gas) evolved over the past two decades, and how does the interaction between resource type and land category (onshore versus offshore) influence these revenue trends across different regions?\]
-    -   **Importance:** \[Statement on why this question is important\]
+    -   **Research question:** In what ways have revenue patterns from renewable versus non-renewable resource extraction (e.g., geothermal, oil, and gas) evolved over the past two decades, and how does the interaction between resource type and land category (onshore versus offshore) influence these revenue trends across different regions?
+    -   **Importance:** This question leverages the dataset’s extensive time span and diverse resource categories, addressing the critical topic of renewable versus non-renewable energy. It enables an exploration of long-term trends, analysis by land type, and comparisons across revenue sources, providing a relevant perspective on the economics of sustainable energy.
     -   **Description:** \[A description of the research topic along with a concise statement of your hypotheses on this topic\]
     -   **Variable types:** \[Identify the types of variables in your research question. Categorical? Quantitative?\]
 
