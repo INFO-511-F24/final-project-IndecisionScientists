@@ -99,7 +99,7 @@ For each data set, include the following:
 
 2.  **U.S. Natural Resources Revenue (2003-2023)**
 
-    -   **Research question:** \[A well formulated research question requiring at least 3 variables with a mix of categorical and quantitative data types\]
+    -   **Research question:** \[In what ways have revenue patterns from renewable versus non-renewable resource extraction (e.g., geothermal, oil, and gas) evolved over the past two decades, and how does the interaction between resource type and land category (onshore versus offshore) influence these revenue trends across different regions?\]
     -   **Importance:** \[Statement on why this question is important\]
     -   **Description:** \[A description of the research topic along with a concise statement of your hypotheses on this topic\]
     -   **Variable types:** \[Identify the types of variables in your research question. Categorical? Quantitative?\]
