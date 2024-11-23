@@ -28,148 +28,54 @@ import pandas as pd
 
 ## Introduction and data
 
-1.  **Remote Work & Mental Health**
+**U.S. Natural Resources Revenue (2003-2023)**
 
-    -   **Source:** Kaggle - <https://www.kaggle.com/datasets/waqi786/remote-work-and-mental-health>
+-   **Source:** Kaggle - <https://www.kaggle.com/datasets/saurabhbadole/u-s-natural-resources-revenue-2003-2023>
 
-    -   **Collection date/method:** Data uploaded in September 2024 and collected from a variety of sources via the digital distribution of a structured questionnaire that anonymized responses on social media platforms, professional networks, and online forums
+-   **Collection date/method:** Data spanning 2003 to present collected and managed by the Department of the Interior's Office of Natural Resources Revenue
 
-    -   **Description:** This dataset comprises 5,000 employee records worldwide with details about work location, stress levels, mental health resource access, job satisfaction, and demographics (age, gender, industry, etc.)
+-   **Description:** This dataset comprises revenue generated from and attributes of natural U.S. resources such as federal lands, waters, and indigenous lands. Data includes land classification, lease types, revenue types, and commodities/products that are extracted from the natural resources.
 
-    -   **Ethical concerns:** N/A
+-   **Ethical concerns:** Revenue data for indigenous/Native American resources was only reported at a national level to protect private/sensitive information
 
-        ```{python}
-        remoteMH = pd.read_csv("data/RemoteWork_MentalHealth.csv")
-        ```
-
-2.  **U.S. Natural Resources Revenue (2003-2023)**
-
-    -   **Source:** Kaggle - <https://www.kaggle.com/datasets/saurabhbadole/u-s-natural-resources-revenue-2003-2023>
-
-    -   **Collection date/method:** Data spanning 2003 to present collected and managed by the Department of the Interior's Office of Natural Resources Revenue
-
-    -   **Description:** This dataset comprises revenue generated from and attributes of natural U.S. resources such as federal lands, waters, and indigenous lands. Data includes land classification, lease types, revenue types, and commodities/products that are extracted from the natural resources.
-
-    -   **Ethical concerns:** Revenue data for indigenous/Native American resources was only reported at a national level to protect private/sensitive information
-
-        ```{python}
-        natResRev = pd.read_csv("data/us_natResources_revenue.csv")
-        ```
-
-3.  **Global Earthquake Data**
-
-    -   **Source:** Kaggle - <https://www.kaggle.com/datasets/shreyasur965/recent-earthquakes>
-
-    -   **Collection date/method:** Data collected using the *EveryEarthquake* API from *RapidAPI* with earthquakes from 6/23/2023 through 9/18/2024
-
-    -   **Description:** This dataset comprises attributes and other details of 1,137 earthquakes from around the world including magnitude, location, date, time, and other measurements used in seismology
-
-    -   **Ethical concerns:** N/A
-
-        ```{python}
-        quakes = pd.read_csv("data/earthquakes.csv")
-        ```
+    ```{python}
+    natResRev = pd.read_csv("data/us_natResources_revenue.csv")
+    ```
 
 ## Research Question
 
-1.  **Remote Work & Mental Health**
+**U.S. Natural Resources Revenue (2003-2023)**
 
-    -   **Research question:** How are employees' stress levels and mental health conditions related to work locations and employees' professional experience levels across age groups? Are changes in productivity associated with changes in physical activity and access to mental health resources?
+-   **Research question:** In what ways have revenue patterns from renewable versus non-renewable resource extraction (e.g., geothermal, oil, and gas) evolved over the past two decades, and how does the interaction between resource type and land category (onshore versus offshore) influence these revenue trends across different regions?
 
-    -   **Importance:** Examining the relationships between the personal well-being of employees, increases in stress, decreases in productivity, and their working locations/arrangements can provide the foundation for future predictive studies/models that are more relevant than ever during a time when employers are determining whether returning employees to central offices presents greater benefit than keeping a hybrid or remote arrangement.
+-   **Importance:** This question leverages the dataset’s extensive time span and diverse resource categories, addressing the critical topic of renewable versus non-renewable energy. It enables an exploration of long-term trends, analysis by land type, and comparisons across revenue sources, providing a relevant perspective on the economics of sustainable energy.
 
-    -   **Description:** This research delves into vocational psychology and its intersection with how technology has changed the work landscape. With the 2020 pandemic forcing employers to adopt remote and hybrid arrangements and post-pandemic "recovery" in the present day, discussions have evolved from the creative ways companies have been able to continue operation while staying home and quarantined to whether it is more beneficial for employees to return to social corporate settings (with a convenient benefit of preventing company losses due to expensive corporate real estate remaining empty). The hypotheses for this study are that younger employees have better mental health in hybrid and remote work locations than older employees (especially those with more years of experience since perhaps these employees are more used to in-person working environments), and increases in physical activity and access to mental health resources are associated with positive changes in productivity.
+-   **Description:** This research examines revenue trends from renewable and non-renewable resources on federal and Native American lands over the past two decades, focusing on differences between onshore and offshore land categories. The study aims to reveal whether renewable resource revenue, particularly from geothermal energy, has grown over time relative to non-renewables like oil and gas. The hypothesis is that revenue from renewable resources has increased over time, while offshore lands generate higher revenue from non-renewables, and onshore lands contribute more to renewables. Additionally, non-renewable revenue remains high but fluctuates due to market and policy changes.
 
-    -   **Variable types:**
+-   **Variable types:**
 
-        -   **Categorical:** Work location, Stress level, Mental health condition, Access to mental health resources, Productivity change, Physical activity
+    -   **Categorical:** Land Category, State, Commodity
 
-        -   **Quantitative:** Age, Years of experience
-
-2.  **U.S. Natural Resources Revenue (2003-2023)**
-
-    -   **Research question:** In what ways have revenue patterns from renewable versus non-renewable resource extraction (e.g., geothermal, oil, and gas) evolved over the past two decades, and how does the interaction between resource type and land category (onshore versus offshore) influence these revenue trends across different regions?
-
-    -   **Importance:** This question leverages the dataset’s extensive time span and diverse resource categories, addressing the critical topic of renewable versus non-renewable energy. It enables an exploration of long-term trends, analysis by land type, and comparisons across revenue sources, providing a relevant perspective on the economics of sustainable energy.
-
-    -   **Description:** This research examines revenue trends from renewable and non-renewable resources on federal and Native American lands over the past two decades, focusing on differences between onshore and offshore land categories. The study aims to reveal whether renewable resource revenue, particularly from geothermal energy, has grown over time relative to non-renewables like oil and gas. The hypothesis is that revenue from renewable resources has increased over time, while offshore lands generate higher revenue from non-renewables, and onshore lands contribute more to renewables. Additionally, non-renewable revenue remains high but fluctuates due to market and policy changes.
-
-    -   **Variable types:**
-
-        -   **Categorical:** Land Category, State, Commodity
-
-        -   **Quantitative:** Revenue, Calendar Year
-
-3.  **Global Earthquake Data**
-
-    -   **Research question:** Can we predict the impact and measure of an earthquake based on various factors, such as location, date, time, magnitude, or depth?
-
-    -   **Importance:** It would be nice to predict the impact of an earthquake to give estimations on recovery times/efforts needed by local governments if they we can accurately predict the impact.
-
-    -   **Description:** This topic covers earthquake data from around the world. Our hypothesis would be: you can predict the measure of impact an earthquake has based on various features of an earthquake.
-
-    -   **Variable types:**
-
-        -   **Object:** Time and date
-
-        -   **Quantitative (number):** Magnitude, depth, felt, cdi, mmi, sig, rms, gap
-
-        -   **Categorical:** Continent, country, alert
+    -   **Quantitative:** Revenue, Calendar Year
 
 ## Glimpse of data
 
-1.  **Remote Work & Mental Health**
+**U.S. Natural Resources Revenue (2003-2023)**
 
-    ```{python}
-    remoteMH.head()
-    ```
+```{python}
+natResRev.head()
+```
 
-    ```{python}
-    remoteMH.info()
-    ```
-
-2.  **U.S. Natural Resources Revenue (2003-2023)**
-
-    ```{python}
-    natResRev.head()
-    ```
-
-    ```{python}
-    natResRev.info()
-    ```
-
-3.  **Global Earthquake Data**
-
-    ```{python}
-    quakes.head()
-    ```
-
-    ```{python}
-    quakes.info()
-    ```
+```{python}
+natResRev.info()
+```
 
 ## Analysis plan
 
-1.  **Remote Work & Mental Health**
+**U.S. Natural Resources Revenue (2003-2023)**
 
-    -   **Plan:** We will need to explore the unique values of some variables to determine the best way to group them in new variables for more generalized comparisons (i.e., age group comparisons, mental health conditions reported versus none reported, etc.). Once data wrangling is complete with the required additional variables created, we can visualize the data with various graphs to determine whether there are relationships among the variables selected.
+-   **Plan:** Data wrangling will initially be required to create variables that group U.S. states into geographic regions so that we can compare the Revenue patterns across Calendar Years between Commodity types, Land Category, and geographic regions. We will also group renewable resources versus non-renewable resources. The comparisons will then primarily be done by constructing a variety of data visualizations.
 
-    -   **Variables to be created:** The ages of employees may need to be binned into age group categories. Similarly, the years of experience for employees may need to be binned into larger experience categories. A new binary variable will also be created to denote whether or not a mental health condition was reported.
+-   **Variables to be created:** A categorical variable will be needed to identify whether a resource is considered renewable or non-renewable. Another categorical variable would be created to identify which geographic region a state that has a particular resource belongs to (e.g., Texas would be in the Southern region, etc.).
 
-    -   **External data:** No external data to be merged.
-
-2.  **U.S. Natural Resources Revenue (2003-2023)**
-
-    -   **Plan:** Data wrangling will initially be required to create variables that group U.S. states into geographic regions so that we can compare the Revenue patterns across Calendar Years between Commodity types, Land Category, and geographic regions. We will also group renewable resources versus non-renewable resources. The comparisons will then primarily be done by constructing a variety of data visualizations.
-
-    -   **Variables to be created:** A categorical variable will be needed to identify whether a resource is considered renewable or non-renewable. Another categorical variable would be created to identify which geographic region a state that has a particular resource belongs to (e.g., Texas would be in the Southern region, etc.).
-
-    -   **External data:** No external data to be merged.
-
-3.  **Global Earthquake Data**
-
-    -   **Plan:** We will need to be more familiar with the type of earthquake features (e.g., cdi, rms, gap) to understand the features that are available for us to use. We will need to take a closer look at the data and then filter out any unnecessary features, and conduct data visualization.
-
-    -   **Variables to be created:** Currently there are no variables expected to be created.
-
-    -   **External data:** No external data to be merged.
+-   **External data:** No external data to be merged.
