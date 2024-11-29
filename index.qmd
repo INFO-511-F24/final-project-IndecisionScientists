@@ -1,11 +1,10 @@
 ---
-title: "Project Title"
-subtitle: "INFO 511 - Fall 2024 - Final Project"
+title: "Revenue Trends in US Natural Resources"
+subtitle: "INFO 511 - Fall 2024: Group Final Project"
 author: 
-  - name: "Team name"
+  - name: "Indecision Scientists"
     affiliations:
-      - name: "School of Information, University of Arizona"
-description: "Project description"
+      - name: "College of Information Science, University of Arizona"
 format:
    html:
     code-tools: true
@@ -20,4 +19,4 @@ jupyter: python3
 
 ## Abstract
 
-Add project abstract here.
+As a culminating project to showcase skills from INFO 511: Fundamentals of Data Science, the Indecision Scientists team aims to examine revenue trends from renewable and non-renewable resources on federal and Native American lands in the United States over the past two decades. This exploration of long-term trends, analysis by land type, and comparisons across revenue sources can provide a relevant perspective on the economics of sustainable energy and reveal whether renewable resource revenue, particularly from geothermal energy, has grown over time relative to non-renewables like oil and gas.

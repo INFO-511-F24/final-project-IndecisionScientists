@@ -1,12 +1,11 @@
 # Team Project Contract
-## Project Title: ***[Title TBD]***
+## Project Title: ***Revenue Trends in US Natural Resources***
 
 ### Team Members
 * **Laura Phrasavath:** 602-421-8757, lphrasav@arizona.edu
-* **Srikanth Oruganti:** 804-874-9062 , srioruganti@arizona.edu
+* **Srikanth Oruganti:** 804-874-9062, srioruganti@arizona.edu
 * **Lucas Smith:** 803-609-7586, lucassmith@arizona.edu
 * **Maria Suresh** 520-333-0012, marianikitha@arizona.edu
-* **Rich Wooten**
 
 ## Project Overview
 **Project Description:** This project aims to utilize the tools and skills from this course to review, clean, and analyze a dataset in order to answer a research question. The project also aims to visualize data relevant to the research question to provide additional context. This will be supported by a team presentation of findings along with a final report.<br>
@@ -38,11 +37,10 @@
 
 ## Team Roles and Responsibilities
 ### Roles
-* **Project Manager:** Srikanth Oruganti – Ensures timelines are met, organizes meetings, and manages communications.
-* **Data Analyst:** Lucas Smith – Responsible for data cleaning, analysis, and exploratory visualizations.
-* **Visualization Specialist:** Maria Suresh – Designs the final visualizations and makes aesthetic choices.
-* **Documentation Lead:** Laura Phrasavath – Keeps detailed notes, ensures all project decisions are documented, and handles the final report.
-* **QA Data Analyst & Presentation Author:** Rich Wooten – Provides additional assistance with data analysis and/or quality assurance and builds the final presentation slide deck.
+* **Project Manager - Srikanth Oruganti:** Ensures timelines are met, organizes meetings, and manages communications.
+* **Data Analyst - Lucas Smith:** Responsible for data cleaning, analysis, and exploratory visualizations.
+* **Visualization Specialist & QA Data Analyst - Maria Suresh:** Provides additional assistance with data analysis and/or quality assurance, designs the final visualizations, and makes aesthetic choices.
+* **Documentation Lead & Presentation Author - Laura Phrasavath:** Keeps detailed notes, ensures all project decisions are documented, handles the final report, and builds the final presentation slide deck.
 
 ### General Responsibilities
 Each team member is responsible for:
@@ -110,7 +108,6 @@ By signing below, each team member agrees to the terms of this contract and comm
 **Name:** Lucas Smith&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                 **Date:** 10/11/24<br>
 **Name:** Laura Phrasavath&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          **Date:** 10/11/24<br>
 **Name:** Srikanth Oruganti&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           **Date:** 10/11/24<br>
-**Name:** ____________________&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    **Date:** ___________<br>
 **Name:** ____________________&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    **Date:** ___________
 
 This template ensures that everyone understands their roles, responsibilities, and the expectations for the project. It can help prevent misunderstandings and promote effective teamwork throughout the project.

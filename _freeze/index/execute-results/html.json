@@ -1,10 +1,10 @@
 {
-  "hash": "27cb0e750a78668c3ed999fcc0fdb551",
+  "hash": "1c62bdc87e06dd9f3754689bdee053ef",
   "result": {
     "engine": "jupyter",
-    "markdown": "---\ntitle: Project Title\nsubtitle: INFO 511 - Fall 2024 - Final Project\nauthor:\n  - name: Team name\n    affiliations:\n      - name: 'School of Information, University of Arizona'\ndescription: Project description\nformat:\n  html:\n    code-tools: true\n    code-overflow: wrap\n    embed-resources: true\neditor: visual\nexecute:\n  warning: false\n  echo: false\n---\n\n## Abstract\n\nAdd project abstract here.\n\n",
+    "markdown": "---\ntitle: \"Revenue Trends in US Natural Resources\"\nsubtitle: \"INFO 511 - Fall 2024: Group Final Project\"\nauthor: \n  - name: \"Indecision Scientists\"\n    affiliations:\n      - name: \"College of Information Science, University of Arizona\"\nformat:\n   html:\n    code-tools: true\n    code-overflow: wrap\n    embed-resources: true\neditor: visual\nexecute:\n  warning: false\n  echo: false\njupyter: python3\n---\n\n\n\n\n\n## Abstract\n\nAs a culminating project to showcase skills from INFO 511: Fundamentals of Data Science, the Indecision Scientists team aims to examine revenue trends from renewable and non-renewable resources on federal and Native American lands in the United States over the past two decades. This exploration of long-term trends, analysis by land type, and comparisons across revenue sources can provide a relevant perspective on the economics of sustainable energy and reveal whether renewable resource revenue, particularly from geothermal energy, has grown over time relative to non-renewables like oil and gas.\n\n",
     "supporting": [
-      "index_files"
+      "index_files/figure-html"
     ],
     "filters": [],
     "includes": {}

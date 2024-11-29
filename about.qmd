@@ -4,14 +4,12 @@ format: html
 editor: visual
 ---
 
-This project was developed by the `Indecision Scientists` team For [INFO 511 - Fundamentals of Data Science](https://datasciaz.netlify.app/) at the University of Arizona, taught by Dr. Greg Chism. The team is comprised of the following team members.
+This project was developed by the **Indecision Scientists** team For [INFO 511 - Fundamentals of Data Science](https://datasciaz.netlify.app/) at the University of Arizona, taught by Dr. Greg Chism. The team is comprised of the following team members.
 
--   Laura Phrasavath: MS DS, Year 1; BS in Computational Mathematical Sciences & BS in Psychology
+-   **Laura Phrasavath:** MS DS, Year 1; BS in Computational Mathematical Sciences & BS in Psychology
 
--   Srikanth Oruganti: MS DS, Year 1; Data and analytics IT professional
+-   **Srikanth Oruganti:** MS DS, Year 1; Data and analytics IT professional
 
--   Lucas Smith: MS DS, Year 1; BA in Computer Science
+-   **Lucas Smith:** MS DS, Year 1; BA in Computer Science
 
--   Maria Nikitha Suresh: MS DS, Year 2.
-
--   Rich Wooten: MS DS, Year 1
+-   **Maria Nikitha Suresh:** MS DS, Year 2

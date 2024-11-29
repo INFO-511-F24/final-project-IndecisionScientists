@@ -1,6 +1,6 @@
 ---
-title: "INFO 511 - Group Final Project"
-subtitle: "Proposal: Milestone 2"
+title: "Project Proposal"
+subtitle: "INFO 511 - Group Final Project"
 author: 
   - name: "Indecision Scientists"
     affiliations:
