@@ -1,7 +1,7 @@
 ---
-title: "Project title"
+title: "Revenue Trends in US Natural Resources"
 subtitle: "INFO 511 - Fall 2024 - Final Project"
-author: "Author names"
+author: "Indecision Scientists"
 title-slide-attributes:
   data-background-image: images/watercolour_sys02_img34_teacup-ocean.jpg
   data-background-size: stretch
@@ -51,6 +51,44 @@ mtcars['speed'] = mtcars['horsepower'] / mtcars['weight']
 penguins = sns.load_dataset('penguins').dropna()
 ```
 
+# Introduction
+
+## Topic & Motivation
+
+-   Introduce the project's topic and motivation for our research questions here
+
+## Data
+
+-   Introduce the project data here
+
+## Exploratory Data Analyses
+
+-   Add highlights from our EDA here
+
+# Results
+
+## Results & Additional Analyses
+
+-   Inference/modeling/other analysis shared here
+
+-   Address answers to research question(s)
+
+-   Can use 1-2 slides for this
+
+## Conclusions & Future Considerations
+
+-   Summary of what was learned about research question(s) and statistical arguments supporting our conclusions
+
+-   Summary of limitations
+
+-   Ideas for how future studies can build upon our findings
+
+## Will delete this slide and everything after
+
+-   Everything after this slide consists of default slides provided by Dr. Chism for guidance
+
+-   Leaving them until we're ready to finalize our slide deck for reference
+
 # Using Quarto for presentations
 
 ## Quarto
@@ -63,7 +101,7 @@ penguins = sns.load_dataset('penguins').dropna()
 
 You can use plain text
 
-::: columns
+::::: columns
 ::: {.column width="40%"}
 -   or bullet points[^1]
 :::
@@ -71,7 +109,7 @@ You can use plain text
 ::: {.column width="60%"}
 or in two columns
 :::
-:::
+:::::
 
 [^1]: And add footnotes
 
@@ -108,7 +146,7 @@ plt.show()
 
 ## Plot and text
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 -   Some text
 
@@ -124,7 +162,7 @@ sns.boxplot(data=penguins, x='bill_length_mm', y='species', hue='species', ax=ax
 plt.show()
 ```
 :::
-:::
+:::::
 
 # A new section...
 
