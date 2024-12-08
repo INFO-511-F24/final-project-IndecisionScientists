@@ -105,65 +105,107 @@
     "text": "By signing below, each team member agrees to the terms of this contract and commits to working together effectively and respectfully.\nName: Lucas Smith                   Date: 10/11/24 Name: Laura Phrasavath       Date: 10/11/24 Name: Srikanth Oruganti      Date: 10/11/24 Name: ____________________      Date: ___________\nThis template ensures that everyone understands their roles, responsibilities, and the expectations for the project. It can help prevent misunderstandings and promote effective teamwork throughout the project."
   },
   {
+    "objectID": "presentation.html#topic-motivation",
+    "href": "presentation.html#topic-motivation",
+    "title": "Revenue Trends in US Natural Resources",
+    "section": "Topic & Motivation",
+    "text": "Topic & Motivation\n\nIntroduce the project’s topic and motivation for our research questions here"
+  },
+  {
+    "objectID": "presentation.html#data",
+    "href": "presentation.html#data",
+    "title": "Revenue Trends in US Natural Resources",
+    "section": "Data",
+    "text": "Data\n\nIntroduce the project data here"
+  },
+  {
+    "objectID": "presentation.html#exploratory-data-analyses",
+    "href": "presentation.html#exploratory-data-analyses",
+    "title": "Revenue Trends in US Natural Resources",
+    "section": "Exploratory Data Analyses",
+    "text": "Exploratory Data Analyses\n\nAdd highlights from our EDA here"
+  },
+  {
+    "objectID": "presentation.html#results-additional-analyses",
+    "href": "presentation.html#results-additional-analyses",
+    "title": "Revenue Trends in US Natural Resources",
+    "section": "Results & Additional Analyses",
+    "text": "Results & Additional Analyses\n\nInference/modeling/other analysis shared here\nAddress answers to research question(s)\nCan use 1-2 slides for this"
+  },
+  {
+    "objectID": "presentation.html#conclusions-future-considerations",
+    "href": "presentation.html#conclusions-future-considerations",
+    "title": "Revenue Trends in US Natural Resources",
+    "section": "Conclusions & Future Considerations",
+    "text": "Conclusions & Future Considerations\n\nSummary of what was learned about research question(s) and statistical arguments supporting our conclusions\nSummary of limitations\nIdeas for how future studies can build upon our findings"
+  },
+  {
+    "objectID": "presentation.html#will-delete-this-slide-and-everything-after",
+    "href": "presentation.html#will-delete-this-slide-and-everything-after",
+    "title": "Revenue Trends in US Natural Resources",
+    "section": "Will delete this slide and everything after",
+    "text": "Will delete this slide and everything after\n\nEverything after this slide consists of default slides provided by Dr. Chism for guidance\nLeaving them until we’re ready to finalize our slide deck for reference"
+  },
+  {
     "objectID": "presentation.html#quarto",
     "href": "presentation.html#quarto",
-    "title": "Project title",
+    "title": "Revenue Trends in US Natural Resources",
     "section": "Quarto",
     "text": "Quarto\n\nThe presentation is created using the Quarto CLI\n## sets the start of a new slide"
   },
   {
     "objectID": "presentation.html#layouts",
     "href": "presentation.html#layouts",
-    "title": "Project title",
+    "title": "Revenue Trends in US Natural Resources",
     "section": "Layouts",
     "text": "Layouts\nYou can use plain text\n\n\n\nor bullet points1\n\n\nor in two columns\n\n\nlike\nthis\n\nAnd add footnotes"
   },
   {
     "objectID": "presentation.html#code",
     "href": "presentation.html#code",
-    "title": "Project title",
+    "title": "Revenue Trends in US Natural Resources",
     "section": "Code",
-    "text": "Code\n\n\n                            OLS Regression Results                            \n==============================================================================\nDep. Variable:                    mpg   R-squared:                       0.073\nModel:                            OLS   Adj. R-squared:                  0.070\nMethod:                 Least Squares   F-statistic:                     30.59\nDate:                Mon, 08 Jul 2024   Prob (F-statistic):           5.84e-08\nTime:                        11:38:07   Log-Likelihood:                -1346.4\nNo. Observations:                 392   AIC:                             2697.\nDf Residuals:                     390   BIC:                             2705.\nDf Model:                           1                                         \nCovariance Type:            nonrobust                                         \n==============================================================================\n                 coef    std err          t      P&gt;|t|      [0.025      0.975]\n------------------------------------------------------------------------------\nconst         35.8015      2.266     15.800      0.000      31.347      40.257\nspeed       -354.7055     64.129     -5.531      0.000    -480.788    -228.623\n==============================================================================\nOmnibus:                       27.687   Durbin-Watson:                   0.589\nProb(Omnibus):                  0.000   Jarque-Bera (JB):               18.976\nSkew:                           0.420   Prob(JB):                     7.57e-05\nKurtosis:                       2.323   Cond. No.                         169.\n==============================================================================\n\nNotes:\n[1] Standard Errors assume that the covariance matrix of the errors is correctly specified."
+    "text": "Code\n\n\n                            OLS Regression Results                            \n==============================================================================\nDep. Variable:                    mpg   R-squared:                       0.073\nModel:                            OLS   Adj. R-squared:                  0.070\nMethod:                 Least Squares   F-statistic:                     30.59\nDate:                Sat, 07 Dec 2024   Prob (F-statistic):           5.84e-08\nTime:                        18:50:42   Log-Likelihood:                -1346.4\nNo. Observations:                 392   AIC:                             2697.\nDf Residuals:                     390   BIC:                             2705.\nDf Model:                           1                                         \nCovariance Type:            nonrobust                                         \n==============================================================================\n                 coef    std err          t      P&gt;|t|      [0.025      0.975]\n------------------------------------------------------------------------------\nconst         35.8015      2.266     15.800      0.000      31.347      40.257\nspeed       -354.7055     64.129     -5.531      0.000    -480.788    -228.623\n==============================================================================\nOmnibus:                       27.687   Durbin-Watson:                   0.589\nProb(Omnibus):                  0.000   Jarque-Bera (JB):               18.976\nSkew:                           0.420   Prob(JB):                     7.57e-05\nKurtosis:                       2.323   Cond. No.                         169.\n==============================================================================\n\nNotes:\n[1] Standard Errors assume that the covariance matrix of the errors is correctly specified."
   },
   {
     "objectID": "presentation.html#plots",
     "href": "presentation.html#plots",
-    "title": "Project title",
+    "title": "Revenue Trends in US Natural Resources",
     "section": "Plots",
     "text": "Plots"
   },
   {
     "objectID": "presentation.html#plot-and-text",
     "href": "presentation.html#plot-and-text",
-    "title": "Project title",
+    "title": "Revenue Trends in US Natural Resources",
     "section": "Plot and text",
     "text": "Plot and text\n\n\n\nSome text\ngoes here"
   },
   {
     "objectID": "presentation.html#tables",
     "href": "presentation.html#tables",
-    "title": "Project title",
+    "title": "Revenue Trends in US Natural Resources",
     "section": "Tables",
     "text": "Tables\nIf you want to generate a table, make sure it is in the HTML format (instead of Markdown or other formats), e.g.,\n\n\n\n\n\n\n\n\n\n\n\n\nspecies\n\n\n\nisland\n\n\n\nbill_length_mm\n\n\n\nbill_depth_mm\n\n\n\nflipper_length_mm\n\n\n\nbody_mass_g\n\n\n\nsex\n\n\n\n\n\n\n\n\n\n\n\n0\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n39.1\n\n\n\n18.7\n\n\n\n181.0\n\n\n\n3750.0\n\n\n\nMale\n\n\n\n\n\n\n\n1\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n39.5\n\n\n\n17.4\n\n\n\n186.0\n\n\n\n3800.0\n\n\n\nFemale\n\n\n\n\n\n\n\n2\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n40.3\n\n\n\n18.0\n\n\n\n195.0\n\n\n\n3250.0\n\n\n\nFemale\n\n\n\n\n\n\n\n4\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n36.7\n\n\n\n19.3\n\n\n\n193.0\n\n\n\n3450.0\n\n\n\nFemale\n\n\n\n\n\n\n\n5\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n39.3\n\n\n\n20.6\n\n\n\n190.0\n\n\n\n3650.0\n\n\n\nMale"
   },
   {
     "objectID": "presentation.html#images",
     "href": "presentation.html#images",
-    "title": "Project title",
+    "title": "Revenue Trends in US Natural Resources",
     "section": "Images",
     "text": "Images\n\nImage credit: Danielle Navarro, Percolate."
   },
   {
     "objectID": "presentation.html#math-expressions",
     "href": "presentation.html#math-expressions",
-    "title": "Project title",
+    "title": "Revenue Trends in US Natural Resources",
     "section": "Math Expressions",
     "text": "Math Expressions\nYou can write LaTeX math expressions inside a pair of dollar signs, e.g. $\\alpha+\\beta$ renders \\(\\alpha + \\beta\\). You can use the display style with double dollar signs:\n$$\\bar{X}=\\frac{1}{n}\\sum_{i=1}^nX_i$$\n\\[\n\\bar{X}=\\frac{1}{n}\\sum_{i=1}^nX_i\n\\]\nLimitations:\n\nThe source code of a LaTeX math expression must be in one line, unless it is inside a pair of double dollar signs, in which case the starting $$ must appear in the very beginning of a line, followed immediately by a non-space character, and the ending $$ must be at the end of a line, led by a non-space character;\nThere should not be spaces after the opening $ or before the closing $."
   },
   {
     "objectID": "presentation.html#feeling-adventurous",
     "href": "presentation.html#feeling-adventurous",
-    "title": "Project title",
+    "title": "Revenue Trends in US Natural Resources",
     "section": "Feeling adventurous?",
     "text": "Feeling adventurous?\n\nYou are welcomed to use the default styling of the slides. In fact, that’s what I expect majority of you will do. You will differentiate yourself with the content of your presentation.\nBut some of you might want to play around with slide styling. Some solutions for this can be found at https://quarto.org/docs/presentations/revealjs."
   },
