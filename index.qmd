@@ -20,3 +20,43 @@ jupyter: python3
 ## Abstract
 
 As a culminating project to showcase skills from INFO 511: Fundamentals of Data Science, the Indecision Scientists team aims to examine revenue trends from renewable and non-renewable resources on federal and Native American lands in the United States over the past two decades. This exploration of long-term trends, analysis by land type, and comparisons across revenue sources can provide a relevant perspective on the economics of sustainable energy and reveal whether renewable resource revenue, particularly from geothermal energy, has grown over time relative to non-renewables like oil and gas.
+
+## Introduction
+
+-   Introduction to the project motivation, data, and research question.
+    -   Include citations for external research
+
+## Data
+
+-   Describe the data and definitions of key variables.
+    -   Include how data were collected
+    -   Clearly describe data cleaning process (e.g., creating new variables, removing observations, etc.)
+-   Include some exploratory data analysis. Focus on the EDA for the response variable and a few other interesting variables and relationships.
+    -   Incorporate appropriate visualizations and summary statistics
+
+## Methodology
+
+-   Brief description of your analysis process.
+-   Explain the reasoning for the types of analyses you do, exploratory, inferential, or modeling.
+    -   If you’ve chosen to do inference, make sure to include a justification for why that inferential approach is appropriate.
+    -   If you’ve chosen to do modeling, describe the model(s) you’re fitting, predictor variables considered for the model including any interactions.
+-   Show how you arrived at the final model by describing the model selection process, interactions considered, variable transformations (if needed), assessment of conditions and diagnostics, and any other relevant considerations that were part of the model fitting process.
+    -   Address any concerns over appropriateness of analyses chosen
+
+## Results
+
+-   Discuss your overall finding and describe the key results from your analysis.
+    -   Address the research questions, using the interpretations to support your conclusions.
+
+    -   Focus on the variables that help you answer the research question and that provide relevant context for the reader.
+
+## Discussion
+
+-   Summary of what you have learned about your research question along with statistical arguments supporting your conclusions.
+-   Discuss the limitations of your analysis and provide suggestions on ways the analysis could be improved.
+    -   Any potential issues pertaining to the reliability and validity of your data and appropriateness of the statistical analysis should also be discussed here.
+-   Include ideas for future work.
+
+## References
+
+-   Citations in APA format here; should have citation to Kaggle dataset at minimum
