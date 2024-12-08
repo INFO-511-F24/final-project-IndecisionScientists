@@ -4820,7 +4820,7 @@ vertical-align: -.125em;
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <div class="quarto-title-block"><div><h1 class="title">Project Proposal</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
-<p class="subtitle lead">INFO 511 - Group Final Project</p>
+<p class="subtitle lead">U.S. Natural Resources Revenue (2003-2023)</p>
 </div>
 
 
@@ -4857,20 +4857,18 @@ vertical-align: -.125em;
 </div>
 <section id="introduction-and-data" class="level2">
 <h2 class="anchored" data-anchor-id="introduction-and-data">Introduction and data</h2>
-<p><strong>U.S. Natural Resources Revenue (2003-2023)</strong></p>
 <ul>
 <li><p><strong>Source:</strong> Kaggle - <a href="https://www.kaggle.com/datasets/saurabhbadole/u-s-natural-resources-revenue-2003-2023" class="uri">https://www.kaggle.com/datasets/saurabhbadole/u-s-natural-resources-revenue-2003-2023</a></p></li>
 <li><p><strong>Collection date/method:</strong> Data spanning 2003 to present collected and managed by the Department of the Interior’s Office of Natural Resources Revenue</p></li>
 <li><p><strong>Description:</strong> This dataset comprises revenue generated from and attributes of natural U.S. resources such as federal lands, waters, and indigenous lands. Data includes land classification, lease types, revenue types, and commodities/products that are extracted from the natural resources.</p></li>
 <li><p><strong>Ethical concerns:</strong> Revenue data for indigenous/Native American resources was only reported at a national level to protect private/sensitive information</p>
-<div id="f90218c2" class="cell" data-execution_count="2">
+<div id="f81fc8e3" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a>natResRev <span class="op">=</span> pd.read_csv(<span class="st">&quot;data/us_natResources_revenue.csv&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></li>
 </ul>
 </section>
 <section id="research-question" class="level2">
 <h2 class="anchored" data-anchor-id="research-question">Research Question</h2>
-<p><strong>U.S. Natural Resources Revenue (2003-2023)</strong></p>
 <ul>
 <li><p><strong>Research question:</strong> In what ways have revenue patterns from renewable versus non-renewable resource extraction (e.g., geothermal, oil, and gas) evolved over the past two decades, and how does the interaction between resource type and land category (onshore versus offshore) influence these revenue trends across different regions?</p></li>
 <li><p><strong>Importance:</strong> This question leverages the dataset’s extensive time span and diverse resource categories, addressing the critical topic of renewable versus non-renewable energy. It enables an exploration of long-term trends, analysis by land type, and comparisons across revenue sources, providing a relevant perspective on the economics of sustainable energy.</p></li>
@@ -4884,8 +4882,7 @@ vertical-align: -.125em;
 </section>
 <section id="glimpse-of-data" class="level2">
 <h2 class="anchored" data-anchor-id="glimpse-of-data">Glimpse of data</h2>
-<p><strong>U.S. Natural Resources Revenue (2003-2023)</strong></p>
-<div id="fdb3f4a8" class="cell" data-execution_count="3">
+<div id="39078fde" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>natResRev.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="3">
 <div>
@@ -4991,7 +4988,7 @@ vertical-align: -.125em;
 </div>
 </div>
 </div>
-<div id="3ec3ee35" class="cell" data-execution_count="4">
+<div id="eadec361" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a>natResRev.info()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
@@ -5018,7 +5015,6 @@ memory usage: 4.4+ MB</code></pre>
 </section>
 <section id="analysis-plan" class="level2">
 <h2 class="anchored" data-anchor-id="analysis-plan">Analysis plan</h2>
-<p><strong>U.S. Natural Resources Revenue (2003-2023)</strong></p>
 <ul>
 <li><p><strong>Plan:</strong> Data wrangling will initially be required to create variables that group U.S. states into geographic regions so that we can compare the Revenue patterns across Calendar Years between Commodity types, Land Category, and geographic regions. We will also group renewable resources versus non-renewable resources. The comparisons will then primarily be done by constructing a variety of data visualizations.</p></li>
 <li><p><strong>Variables to be created:</strong> A categorical variable will be needed to identify whether a resource is considered renewable or non-renewable. Another categorical variable would be created to identify which geographic region a state that has a particular resource belongs to (e.g., Texas would be in the Southern region, etc.).</p></li>
@@ -5687,7 +5683,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class>
 <div class="sourceCode" id="cb6" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1"></a><span class="co">---</span></span>
 <span id="cb6-2"><a href="#cb6-2"></a><span class="an">title:</span><span class="co"> &quot;Project Proposal&quot;</span></span>
-<span id="cb6-3"><a href="#cb6-3"></a><span class="an">subtitle:</span><span class="co"> &quot;INFO 511 - Group Final Project&quot;</span></span>
+<span id="cb6-3"><a href="#cb6-3"></a><span class="an">subtitle:</span><span class="co"> &quot;U.S. Natural Resources Revenue (2003-2023)&quot;</span></span>
 <span id="cb6-4"><a href="#cb6-4"></a><span class="an">author:</span><span class="co"> </span></span>
 <span id="cb6-5"><a href="#cb6-5"></a><span class="co">  - name: &quot;Indecision Scientists&quot;</span></span>
 <span id="cb6-6"><a href="#cb6-6"></a><span class="co">    affiliations:</span></span>
@@ -5715,57 +5711,49 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb6-30"><a href="#cb6-30"></a></span>
 <span id="cb6-31"><a href="#cb6-31"></a><span class="fu">## Introduction and data</span></span>
 <span id="cb6-32"><a href="#cb6-32"></a></span>
-<span id="cb6-33"><a href="#cb6-33"></a>**U.S. Natural Resources Revenue (2003-2023)**</span>
+<span id="cb6-33"><a href="#cb6-33"></a><span class="ss">-   </span>**Source:** Kaggle - <span class="ot">&lt;https://www.kaggle.com/datasets/saurabhbadole/u-s-natural-resources-revenue-2003-2023&gt;</span></span>
 <span id="cb6-34"><a href="#cb6-34"></a></span>
-<span id="cb6-35"><a href="#cb6-35"></a><span class="ss">-   </span>**Source:** Kaggle - <span class="ot">&lt;https://www.kaggle.com/datasets/saurabhbadole/u-s-natural-resources-revenue-2003-2023&gt;</span></span>
+<span id="cb6-35"><a href="#cb6-35"></a><span class="ss">-   </span>**Collection date/method:** Data spanning 2003 to present collected and managed by the Department of the Interior&#39;s Office of Natural Resources Revenue</span>
 <span id="cb6-36"><a href="#cb6-36"></a></span>
-<span id="cb6-37"><a href="#cb6-37"></a><span class="ss">-   </span>**Collection date/method:** Data spanning 2003 to present collected and managed by the Department of the Interior&#39;s Office of Natural Resources Revenue</span>
+<span id="cb6-37"><a href="#cb6-37"></a><span class="ss">-   </span>**Description:** This dataset comprises revenue generated from and attributes of natural U.S. resources such as federal lands, waters, and indigenous lands. Data includes land classification, lease types, revenue types, and commodities/products that are extracted from the natural resources.</span>
 <span id="cb6-38"><a href="#cb6-38"></a></span>
-<span id="cb6-39"><a href="#cb6-39"></a><span class="ss">-   </span>**Description:** This dataset comprises revenue generated from and attributes of natural U.S. resources such as federal lands, waters, and indigenous lands. Data includes land classification, lease types, revenue types, and commodities/products that are extracted from the natural resources.</span>
+<span id="cb6-39"><a href="#cb6-39"></a><span class="ss">-   </span>**Ethical concerns:** Revenue data for indigenous/Native American resources was only reported at a national level to protect private/sensitive information</span>
 <span id="cb6-40"><a href="#cb6-40"></a></span>
-<span id="cb6-41"><a href="#cb6-41"></a><span class="ss">-   </span>**Ethical concerns:** Revenue data for indigenous/Native American resources was only reported at a national level to protect private/sensitive information</span>
-<span id="cb6-42"><a href="#cb6-42"></a></span>
-<span id="cb6-43"><a href="#cb6-43"></a>    <span class="in">```{python}</span></span>
-<span id="cb6-44"><a href="#cb6-44"></a><span class="in">    natResRev = pd.read_csv(&quot;data/us_natResources_revenue.csv&quot;)</span></span>
-<span id="cb6-45"><a href="#cb6-45"></a><span class="in">    ```</span></span>
+<span id="cb6-41"><a href="#cb6-41"></a>    <span class="in">```{python}</span></span>
+<span id="cb6-42"><a href="#cb6-42"></a><span class="in">    natResRev = pd.read_csv(&quot;data/us_natResources_revenue.csv&quot;)</span></span>
+<span id="cb6-43"><a href="#cb6-43"></a><span class="in">    ```</span></span>
+<span id="cb6-44"><a href="#cb6-44"></a></span>
+<span id="cb6-45"><a href="#cb6-45"></a><span class="fu">## Research Question</span></span>
 <span id="cb6-46"><a href="#cb6-46"></a></span>
-<span id="cb6-47"><a href="#cb6-47"></a><span class="fu">## Research Question</span></span>
+<span id="cb6-47"><a href="#cb6-47"></a><span class="ss">-   </span>**Research question:** In what ways have revenue patterns from renewable versus non-renewable resource extraction (e.g., geothermal, oil, and gas) evolved over the past two decades, and how does the interaction between resource type and land category (onshore versus offshore) influence these revenue trends across different regions?</span>
 <span id="cb6-48"><a href="#cb6-48"></a></span>
-<span id="cb6-49"><a href="#cb6-49"></a>**U.S. Natural Resources Revenue (2003-2023)**</span>
+<span id="cb6-49"><a href="#cb6-49"></a><span class="ss">-   </span>**Importance:** This question leverages the dataset’s extensive time span and diverse resource categories, addressing the critical topic of renewable versus non-renewable energy. It enables an exploration of long-term trends, analysis by land type, and comparisons across revenue sources, providing a relevant perspective on the economics of sustainable energy.</span>
 <span id="cb6-50"><a href="#cb6-50"></a></span>
-<span id="cb6-51"><a href="#cb6-51"></a><span class="ss">-   </span>**Research question:** In what ways have revenue patterns from renewable versus non-renewable resource extraction (e.g., geothermal, oil, and gas) evolved over the past two decades, and how does the interaction between resource type and land category (onshore versus offshore) influence these revenue trends across different regions?</span>
+<span id="cb6-51"><a href="#cb6-51"></a><span class="ss">-   </span>**Description:** This research examines revenue trends from renewable and non-renewable resources on federal and Native American lands over the past two decades, focusing on differences between onshore and offshore land categories. The study aims to reveal whether renewable resource revenue, particularly from geothermal energy, has grown over time relative to non-renewables like oil and gas. The hypothesis is that revenue from renewable resources has increased over time, while offshore lands generate higher revenue from non-renewables, and onshore lands contribute more to renewables. Additionally, non-renewable revenue remains high but fluctuates due to market and policy changes.</span>
 <span id="cb6-52"><a href="#cb6-52"></a></span>
-<span id="cb6-53"><a href="#cb6-53"></a><span class="ss">-   </span>**Importance:** This question leverages the dataset’s extensive time span and diverse resource categories, addressing the critical topic of renewable versus non-renewable energy. It enables an exploration of long-term trends, analysis by land type, and comparisons across revenue sources, providing a relevant perspective on the economics of sustainable energy.</span>
+<span id="cb6-53"><a href="#cb6-53"></a><span class="ss">-   </span>**Variable types:**</span>
 <span id="cb6-54"><a href="#cb6-54"></a></span>
-<span id="cb6-55"><a href="#cb6-55"></a><span class="ss">-   </span>**Description:** This research examines revenue trends from renewable and non-renewable resources on federal and Native American lands over the past two decades, focusing on differences between onshore and offshore land categories. The study aims to reveal whether renewable resource revenue, particularly from geothermal energy, has grown over time relative to non-renewables like oil and gas. The hypothesis is that revenue from renewable resources has increased over time, while offshore lands generate higher revenue from non-renewables, and onshore lands contribute more to renewables. Additionally, non-renewable revenue remains high but fluctuates due to market and policy changes.</span>
+<span id="cb6-55"><a href="#cb6-55"></a><span class="ss">    -   </span>**Categorical:** Land Category, State, Commodity</span>
 <span id="cb6-56"><a href="#cb6-56"></a></span>
-<span id="cb6-57"><a href="#cb6-57"></a><span class="ss">-   </span>**Variable types:**</span>
+<span id="cb6-57"><a href="#cb6-57"></a><span class="ss">    -   </span>**Quantitative:** Revenue, Calendar Year</span>
 <span id="cb6-58"><a href="#cb6-58"></a></span>
-<span id="cb6-59"><a href="#cb6-59"></a><span class="ss">    -   </span>**Categorical:** Land Category, State, Commodity</span>
+<span id="cb6-59"><a href="#cb6-59"></a><span class="fu">## Glimpse of data</span></span>
 <span id="cb6-60"><a href="#cb6-60"></a></span>
-<span id="cb6-61"><a href="#cb6-61"></a><span class="ss">    -   </span>**Quantitative:** Revenue, Calendar Year</span>
-<span id="cb6-62"><a href="#cb6-62"></a></span>
-<span id="cb6-63"><a href="#cb6-63"></a><span class="fu">## Glimpse of data</span></span>
-<span id="cb6-64"><a href="#cb6-64"></a></span>
-<span id="cb6-65"><a href="#cb6-65"></a>**U.S. Natural Resources Revenue (2003-2023)**</span>
+<span id="cb6-63"><a href="#cb6-63"></a><span class="in">```{python}</span></span>
+<span id="cb6-64"><a href="#cb6-64"></a>natResRev.head()</span>
+<span id="cb6-65"><a href="#cb6-65"></a><span class="in">```</span></span>
 <span id="cb6-66"><a href="#cb6-66"></a></span>
 <span id="cb6-69"><a href="#cb6-69"></a><span class="in">```{python}</span></span>
-<span id="cb6-70"><a href="#cb6-70"></a>natResRev.head()</span>
+<span id="cb6-70"><a href="#cb6-70"></a>natResRev.info()</span>
 <span id="cb6-71"><a href="#cb6-71"></a><span class="in">```</span></span>
 <span id="cb6-72"><a href="#cb6-72"></a></span>
-<span id="cb6-75"><a href="#cb6-75"></a><span class="in">```{python}</span></span>
-<span id="cb6-76"><a href="#cb6-76"></a>natResRev.info()</span>
-<span id="cb6-77"><a href="#cb6-77"></a><span class="in">```</span></span>
+<span id="cb6-73"><a href="#cb6-73"></a><span class="fu">## Analysis plan</span></span>
+<span id="cb6-74"><a href="#cb6-74"></a></span>
+<span id="cb6-75"><a href="#cb6-75"></a><span class="ss">-   </span>**Plan:** Data wrangling will initially be required to create variables that group U.S. states into geographic regions so that we can compare the Revenue patterns across Calendar Years between Commodity types, Land Category, and geographic regions. We will also group renewable resources versus non-renewable resources. The comparisons will then primarily be done by constructing a variety of data visualizations.</span>
+<span id="cb6-76"><a href="#cb6-76"></a></span>
+<span id="cb6-77"><a href="#cb6-77"></a><span class="ss">-   </span>**Variables to be created:** A categorical variable will be needed to identify whether a resource is considered renewable or non-renewable. Another categorical variable would be created to identify which geographic region a state that has a particular resource belongs to (e.g., Texas would be in the Southern region, etc.).</span>
 <span id="cb6-78"><a href="#cb6-78"></a></span>
-<span id="cb6-79"><a href="#cb6-79"></a><span class="fu">## Analysis plan</span></span>
-<span id="cb6-80"><a href="#cb6-80"></a></span>
-<span id="cb6-81"><a href="#cb6-81"></a>**U.S. Natural Resources Revenue (2003-2023)**</span>
-<span id="cb6-82"><a href="#cb6-82"></a></span>
-<span id="cb6-83"><a href="#cb6-83"></a><span class="ss">-   </span>**Plan:** Data wrangling will initially be required to create variables that group U.S. states into geographic regions so that we can compare the Revenue patterns across Calendar Years between Commodity types, Land Category, and geographic regions. We will also group renewable resources versus non-renewable resources. The comparisons will then primarily be done by constructing a variety of data visualizations.</span>
-<span id="cb6-84"><a href="#cb6-84"></a></span>
-<span id="cb6-85"><a href="#cb6-85"></a><span class="ss">-   </span>**Variables to be created:** A categorical variable will be needed to identify whether a resource is considered renewable or non-renewable. Another categorical variable would be created to identify which geographic region a state that has a particular resource belongs to (e.g., Texas would be in the Southern region, etc.).</span>
-<span id="cb6-86"><a href="#cb6-86"></a></span>
-<span id="cb6-87"><a href="#cb6-87"></a><span class="ss">-   </span>**External data:** No external data to be merged.</span>
+<span id="cb6-79"><a href="#cb6-79"></a><span class="ss">-   </span>**External data:** No external data to be merged.</span>
 </code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
