@@ -180,5 +180,47 @@
     "title": "Revenue Trends in US Natural Resources",
     "section": "",
     "text": "As a culminating project to showcase skills from INFO 511: Fundamentals of Data Science, the Indecision Scientists team aims to examine revenue trends from renewable and non-renewable resources on federal and Native American lands in the United States over the past two decades. This exploration of long-term trends, analysis by land type, and comparisons across revenue sources can provide a relevant perspective on the economics of sustainable energy and reveal whether renewable resource revenue, particularly from geothermal energy, has grown over time relative to non-renewables like oil and gas."
+  },
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "Revenue Trends in US Natural Resources",
+    "section": "Introduction",
+    "text": "Introduction\n\nIntroduction to the project motivation, data, and research question.\n\nInclude citations for external research"
+  },
+  {
+    "objectID": "index.html#data",
+    "href": "index.html#data",
+    "title": "Revenue Trends in US Natural Resources",
+    "section": "Data",
+    "text": "Data\n\nDescribe the data and definitions of key variables.\n\nInclude how data were collected\nClearly describe data cleaning process (e.g., creating new variables, removing observations, etc.)\n\nInclude some exploratory data analysis. Focus on the EDA for the response variable and a few other interesting variables and relationships.\n\nIncorporate appropriate visualizations and summary statistics"
+  },
+  {
+    "objectID": "index.html#methodology",
+    "href": "index.html#methodology",
+    "title": "Revenue Trends in US Natural Resources",
+    "section": "Methodology",
+    "text": "Methodology\n\nBrief description of your analysis process.\nExplain the reasoning for the types of analyses you do, exploratory, inferential, or modeling.\n\nIf you’ve chosen to do inference, make sure to include a justification for why that inferential approach is appropriate.\nIf you’ve chosen to do modeling, describe the model(s) you’re fitting, predictor variables considered for the model including any interactions.\n\nShow how you arrived at the final model by describing the model selection process, interactions considered, variable transformations (if needed), assessment of conditions and diagnostics, and any other relevant considerations that were part of the model fitting process.\n\nAddress any concerns over appropriateness of analyses chosen"
+  },
+  {
+    "objectID": "index.html#results",
+    "href": "index.html#results",
+    "title": "Revenue Trends in US Natural Resources",
+    "section": "Results",
+    "text": "Results\n\nDiscuss your overall finding and describe the key results from your analysis.\n\nAddress the research questions, using the interpretations to support your conclusions.\nFocus on the variables that help you answer the research question and that provide relevant context for the reader."
+  },
+  {
+    "objectID": "index.html#discussion",
+    "href": "index.html#discussion",
+    "title": "Revenue Trends in US Natural Resources",
+    "section": "Discussion",
+    "text": "Discussion\n\nSummary of what you have learned about your research question along with statistical arguments supporting your conclusions.\nDiscuss the limitations of your analysis and provide suggestions on ways the analysis could be improved.\n\nAny potential issues pertaining to the reliability and validity of your data and appropriateness of the statistical analysis should also be discussed here.\n\nInclude ideas for future work."
+  },
+  {
+    "objectID": "index.html#references",
+    "href": "index.html#references",
+    "title": "Revenue Trends in US Natural Resources",
+    "section": "References",
+    "text": "References\n\nCitations in APA format here; should have citation to Kaggle dataset at minimum"
   }
 ]
