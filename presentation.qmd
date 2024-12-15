@@ -63,7 +63,39 @@ penguins = sns.load_dataset('penguins').dropna()
 
 ## Exploratory Data Analyses
 
--   Add highlights from our EDA here
+-   Focus was on state revenue.
+
+-   Originally created a choropleth of state colored by a range of the minimum and maximum revenue.
+
+-   We found it hard to distinguish between overly high performing states and high performing states.
+
+---
+
+![](images/20YearRevenueByState.png)
+
+-   E.g., NM=32B, UT=4.23B, however both are colored yellow.
+
+---
+
+-   To further differentiate, we used a logarithmic scaling
+
+![](images/20YearRevenueByStateLog.png)
+
+---
+
+-   Could also compare revenue by region, and see that Pacific & Western North Central outweigh all others.
+
+    ![](images/RevenueByRegion.png)
+
+---
+
+![](images/Top5Commodities.png)
+
+-   Many commodities found, so we only reviewed the top 5.
+
+-   Oil was the highest producing.
+
+-   This data is across all states, not stratified by region.
 
 # Results
 
