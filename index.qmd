@@ -44,11 +44,125 @@ As a culminating project to showcase skills from INFO 511: Fundamentals of Data 
     -   Address any concerns over appropriateness of analyses chosen
 
 ## Results
+    ```{python}
+    import pandas as pd
+    import matplotlib.pyplot as plt
+    import seaborn as sns
 
--   Discuss your overall finding and describe the key results from your analysis.
-    -   Address the research questions, using the interpretations to support your conclusions.
+    # Importing data
+    data = pd.read_csv('./data/us_natResources_revenue.csv')
 
-    -   Focus on the variables that help you answer the research question and that provide relevant context for the reader.
+    # Create Resource Type Column (Renewable vs Non-Renewable)
+    renewable_resources = ['Geothermal', 'Solar', 'Wind']
+    data['Resource Type'] = data['Commodity'].apply(lambda x: 'Renewable' if x in renewable_resources else 'Non-Renewable')
+
+        # Map States to Regions 
+    state_to_region = {
+        "Connecticut": "New England", "Maine": "New England", "Massachusetts": "New England", "New Hampshire": "New England",
+        "Rhode Island": "New England", "Vermont": "New England", "New Jersey": "Middle Atlantic", "New York": "Middle Atlantic",
+        "Pennsylvania": "Middle Atlantic", "Illinois": "East North Central", "Indiana": "East North Central", "Michigan": "East North Central",
+        "Ohio": "East North Central", "Wisconsin": "East North Central", "Iowa": "West North Central", "Kansas": "West North Central",
+        "Minnesota": "West North Central", "Missouri": "West North Central", "Nebraska": "West North Central", "North Dakota": "West North Central",
+        "South Dakota": "West North Central", "Delaware": "South Atlantic", "District of Columbia": "South Atlantic", "Florida": "South Atlantic",
+        "Georgia": "South Atlantic", "Maryland": "South Atlantic", "North Carolina": "South Atlantic", "South Carolina": "South Atlantic",
+        "Virginia": "South Atlantic", "West Virginia": "South Atlantic", "Alabama": "East South Central", "Kentucky": "East South Central",
+        "Mississippi": "East South Central", "Tennessee": "East South Central", "Arkansas": "West South Central", "Louisiana": "West South Central",
+        "Oklahoma": "West South Central", "Texas": "West South Central", "Arizona": "Mountain", "Colorado": "Mountain", "Idaho": "Mountain",
+        "Montana": "Mountain", "Nevada": "Mountain", "New Mexico": "Mountain", "Utah": "Mountain", "Wyoming": "Mountain", "Alaska": "Pacific",
+        "California": "Pacific", "Hawaii": "Pacific", "Oregon": "Pacific", "Washington": "Pacific"
+    }
+
+
+    data['Region'] = data['State'].map(state_to_region)
+
+    data['Land Category'] = data['Land Category'].fillna('Onshore')
+
+    # Create all possible combinations of 'Calendar Year', 'Region', 'Resource Type', and 'Land Category'
+    all_combinations = pd.MultiIndex.from_product(
+        [data['Calendar Year'].unique(), data['Region'].unique(), data['Resource Type'].unique(), ['Onshore', 'Offshore']],
+        names=['Calendar Year', 'Region', 'Resource Type', 'Land Category']
+    )
+
+    # Create an empty DataFrame with this MultiIndex
+    timeseries_data = pd.DataFrame(index=all_combinations)
+
+    # Merge with the original data to ensure all categories are represented
+    timeseries_data = timeseries_data.reset_index()
+    timeseries_data = pd.merge(timeseries_data, data[['Calendar Year', 'Region', 'Resource Type', 'Land Category', 'Revenue']], 
+                            on=['Calendar Year', 'Region', 'Resource Type', 'Land Category'], how='left')
+
+    # Fill any NaN Revenue values with 0
+    timeseries_data['Revenue'] = timeseries_data['Revenue'].fillna(0)
+
+    # Group by 'Calendar Year', 'Region', 'Resource Type', and 'Land Category' and aggregate 'Revenue'
+    timeseries_data = timeseries_data.groupby(['Calendar Year', 'Region', 'Resource Type', 'Land Category']).sum().reset_index()
+
+    timeseries_data['Calendar Year'] = timeseries_data['Calendar Year'].round().astype(int)
+    
+    ```
+
+```{python}
+    # Visualization of Revenue Trends
+    plt.figure(figsize=(9.5,6))
+    sns.lineplot(data=timeseries_data, x='Calendar Year', y='Revenue', hue='Resource Type', style='Resource Type', markers=True)
+    plt.title('Revenue Trends: Renewable vs Non-Renewable Resources Over Time')
+    plt.xlabel('Year')
+    plt.ylabel('Revenue')
+    plt.xticks(timeseries_data['Calendar Year'].unique(), rotation=45)  
+    plt.legend(title='Resource Type')
+    plt.grid(True)
+    plt.show()
+```
+
+```{python}
+pivot_data = timeseries_data.pivot_table(values='Revenue', index='Region', columns=['Resource Type', 'Land Category'], aggfunc='sum', fill_value=0)
+pivot_data.plot(kind='bar', stacked=True, figsize=(8, 6), colormap='coolwarm')
+plt.title('Stacked Revenue by Region, Resource Type, and Land Category')
+plt.xlabel('Region')
+plt.ylabel('Revenue')
+plt.legend(title='Resource Type & Land Category', bbox_to_anchor=(1.05, 1), loc='upper left')
+plt.grid(True)
+plt.tight_layout()
+plt.show()
+```
+
+
+```{python}
+pivot_data = timeseries_data.pivot_table(values='Revenue', index='Region', columns=['Resource Type', 'Land Category'], aggfunc='sum', fill_value=0)
+plt.figure(figsize=(9, 6))
+sns.heatmap(pivot_data, annot=True, cmap='coolwarm', fmt='.1f', linewidths=0.5)
+plt.title('Revenue Heatmap by Region, Resource Type, and Land Category')
+plt.xlabel('Resource Type & Land Category')
+plt.ylabel('Region')
+plt.tight_layout()
+```
+
+### Overall Findings
+Our analysis explored how revenue patterns from renewable versus non-renewable resource extraction have evolved over the past two decades and examined how the interaction between resource type (renewable vs. non-renewable) and land category (onshore vs. offshore) influences these trends across different regions.
+
+### Key Results
+
+**1. Revenue Evolution of Resources:**
+
+- **Non-Renewable Resources:**
+
+   - Exhibit a clear upward trend in revenue over time, especially post-2020, indicating a potential rise in demand or price fluctuations.
+   - Sharp fluctuations reflect significant market volatility, which is typical for sectors dependent on external factors such as global demand or geopolitical issues.
+
+- **Renewable Resources:**
+
+   - Revenue remains flat with only minimal growth over the years.
+   - This pattern suggests slower adoption or lower revenue generation in comparison to non-renewables, highlighting a lag in renewable resource development or market integration.
+
+**2. Onshore vs. Offshore Contributions:**
+
+- Onshore resources, particularly in the non-renewable sector, have been the dominant drivers of revenue across most regions.
+- Offshore resources contribute minimal revenue, particularly in renewable sectors, indicating that offshore extraction (for both non-renewables and renewables) has not reached the same level of economic significance.
+
+### Key Insights
+
+- Non-renewable onshore resources continue to lead in terms of revenue generation, reflecting significant growth but also volatility due to market fluctuations.
+- Offshore resources, including both renewable and non-renewable, show little revenue impact, with offshore renewable resources contributing especially low values.
 
 ## Discussion
 
