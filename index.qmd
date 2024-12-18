@@ -45,7 +45,7 @@ As a culminating project to showcase skills from INFO 511: Fundamentals of Data 
 
 ## Results
 
-```{{python}}
+```{python}
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -99,7 +99,6 @@ timeseries_data['Revenue'] = timeseries_data['Revenue'].fillna(0)
 timeseries_data = timeseries_data.groupby(['Calendar Year', 'Region', 'Resource Type', 'Land Category']).sum().reset_index()
 
 timeseries_data['Calendar Year'] = timeseries_data['Calendar Year'].round().astype(int)
-
 ```
 
 ```{python}
