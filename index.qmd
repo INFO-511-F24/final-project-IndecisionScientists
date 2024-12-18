@@ -32,7 +32,12 @@ As a culminating project to showcase skills from INFO 511: Fundamentals of Data 
 
     -The dataset, managed by the Department of the Interior’s Office of Natural Resources Revenue, excludes revenue from privately-owned or state lands. Native American revenue data is reported only at the national level to protect private and sensitive information
 
-
+    -According to the priliminary analysis, we have 48K observations across 12 variables
+    - This also includes information for  
+        -Land classification
+        -Lease types
+        -Revenue types
+        -Commodities/products extracted
 
 ## Data
 
