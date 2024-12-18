@@ -24,7 +24,15 @@ As a culminating project to showcase skills from INFO 511: Fundamentals of Data 
 ## Introduction
 
 -   Introduction to the project motivation, data, and research question.
-    -   Include citations for external research
+    -The objective of the project to analyze valuable resource for analyzing trends in natural resource revenues and understanding economic	contributions from various types of land and resource extractions.
+    -The main pupose of this research is to provided relevant perspective on economics of sustainable energy and	explore long-term trends in both resource types, regional land types, and revenues from resource extraction
+    #questions
+    -How has revenue evolved over past two decades by resource type by analysing the data related to renewable and non renewable resources?
+    -Does resource type and land category influence revenue trends across geographic regions like onshore and offshore?
+
+    -The dataset, managed by the Department of the Interior’s Office of Natural Resources Revenue, excludes revenue from privately-owned or state lands. Native American revenue data is reported only at the national level to protect private and sensitive information
+
+
 
 ## Data
 
