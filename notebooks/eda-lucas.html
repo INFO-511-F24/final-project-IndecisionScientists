@@ -135,7 +135,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Proposal</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../presentation.html"> 
+    <a class="nav-link" href="../presentation.pdf"> 
 <span class="menu-text">Presentation</span></a>
   </li>  
   <li class="nav-item">
@@ -161,8 +161,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#viewing-by-commodity-over-time" id="toc-viewing-by-commodity-over-time" class="nav-link active" data-scroll-target="#viewing-by-commodity-over-time">Viewing by commodity over time</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -170,20 +176,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<div id="cell-0" class="cell" data-execution_count="21">
+<div id="cell-0" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns </span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> StandardScaler, OneHotEncoder</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-1" class="cell" data-execution_count="22">
+<div id="cell-1" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>usnr <span class="op">=</span> pd.read_csv(<span class="st">"../data/us_natResources_revenue.csv"</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>usnr <span class="op">=</span> usnr[<span class="bu">list</span>(<span class="bu">set</span>(usnr.columns) <span class="op">-</span> <span class="bu">set</span>([<span class="st">'Offshore Region'</span>]))]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-2" class="cell" data-execution_count="23">
+<div id="cell-2" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>usnr.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="23">
+<div class="cell-output cell-output-display" data-execution_count="3">
 <div>
 
 
@@ -191,89 +197,89 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <thead>
 <tr class="header">
 <th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">Land Category</th>
-<th data-quarto-table-cell-role="th">FIPS Code</th>
-<th data-quarto-table-cell-role="th">Land Class</th>
 <th data-quarto-table-cell-role="th">Product</th>
-<th data-quarto-table-cell-role="th">Revenue</th>
-<th data-quarto-table-cell-role="th">Mineral Lease Type</th>
-<th data-quarto-table-cell-role="th">Calendar Year</th>
-<th data-quarto-table-cell-role="th">County</th>
-<th data-quarto-table-cell-role="th">Commodity</th>
+<th data-quarto-table-cell-role="th">FIPS Code</th>
 <th data-quarto-table-cell-role="th">Revenue Type</th>
 <th data-quarto-table-cell-role="th">State</th>
+<th data-quarto-table-cell-role="th">County</th>
+<th data-quarto-table-cell-role="th">Revenue</th>
+<th data-quarto-table-cell-role="th">Mineral Lease Type</th>
+<th data-quarto-table-cell-role="th">Commodity</th>
+<th data-quarto-table-cell-role="th">Land Class</th>
+<th data-quarto-table-cell-role="th">Land Category</th>
+<th data-quarto-table-cell-role="th">Calendar Year</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">0</td>
-<td>Onshore</td>
-<td>42005.0</td>
-<td>Federal</td>
 <td>Unprocessed (Wet) Gas</td>
-<td>341.47</td>
-<td>Oil &amp; Gas</td>
-<td>2003</td>
-<td>Armstrong</td>
-<td>Gas</td>
+<td>42005.0</td>
 <td>Royalties</td>
 <td>Pennsylvania</td>
+<td>Armstrong</td>
+<td>341.47</td>
+<td>Oil &amp; Gas</td>
+<td>Gas</td>
+<td>Federal</td>
+<td>Onshore</td>
+<td>2003</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">1</td>
-<td>Onshore</td>
-<td>22069.0</td>
-<td>Federal</td>
 <td>NaN</td>
-<td>331.30</td>
-<td>Oil &amp; Gas</td>
-<td>2003</td>
-<td>Natchitoches</td>
-<td>Oil &amp; gas (pre-production)</td>
+<td>22069.0</td>
 <td>Other revenues</td>
 <td>Louisiana</td>
+<td>Natchitoches</td>
+<td>331.30</td>
+<td>Oil &amp; Gas</td>
+<td>Oil &amp; gas (pre-production)</td>
+<td>Federal</td>
+<td>Onshore</td>
+<td>2003</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2</td>
-<td>Onshore</td>
-<td>29093.0</td>
-<td>Federal</td>
 <td>Copper Concentrate</td>
-<td>57929.02</td>
-<td>Hardrock</td>
-<td>2003</td>
-<td>Iron</td>
-<td>Copper</td>
+<td>29093.0</td>
 <td>Royalties</td>
 <td>Missouri</td>
+<td>Iron</td>
+<td>57929.02</td>
+<td>Hardrock</td>
+<td>Copper</td>
+<td>Federal</td>
+<td>Onshore</td>
+<td>2003</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">3</td>
-<td>Onshore</td>
-<td>29093.0</td>
-<td>Federal</td>
 <td>NaN</td>
-<td>-51533.57</td>
-<td>Hardrock</td>
-<td>2003</td>
-<td>Iron</td>
-<td>Hardrock</td>
+<td>29093.0</td>
 <td>Rents</td>
 <td>Missouri</td>
+<td>Iron</td>
+<td>-51533.57</td>
+<td>Hardrock</td>
+<td>Hardrock</td>
+<td>Federal</td>
+<td>Onshore</td>
+<td>2003</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">4</td>
-<td>Onshore</td>
-<td>29093.0</td>
-<td>Federal</td>
 <td>Copper Concentrate</td>
-<td>14834.41</td>
-<td>Hardrock</td>
-<td>2003</td>
-<td>Iron</td>
-<td>Hardrock</td>
+<td>29093.0</td>
 <td>Royalties</td>
 <td>Missouri</td>
+<td>Iron</td>
+<td>14834.41</td>
+<td>Hardrock</td>
+<td>Hardrock</td>
+<td>Federal</td>
+<td>Onshore</td>
+<td>2003</td>
 </tr>
 </tbody>
 </table>
@@ -281,13 +287,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<div id="cell-3" class="cell" data-execution_count="24">
+<div id="cell-3" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># clean</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-4" class="cell" data-execution_count="25">
+<div id="cell-4" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">'https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-5" class="cell" data-execution_count="26">
+<div id="cell-5" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>us_state_to_abbrev <span class="op">=</span> {</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Alabama"</span>: <span class="st">"AL"</span>,</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Alaska"</span>: <span class="st">"AK"</span>,</span>
@@ -348,7 +354,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-58"><a href="#cb6-58" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Virgin Islands, U.S."</span>: <span class="st">"VI"</span>,</span>
 <span id="cb6-59"><a href="#cb6-59" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-6" class="cell" data-execution_count="27">
+<div id="cell-6" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.express <span class="im">as</span> px</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>usnr <span class="op">=</span> usnr.dropna(axis<span class="op">=</span><span class="dv">0</span>)</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>usnr[<span class="st">'state code'</span>] <span class="op">=</span> usnr[<span class="st">'State'</span>].<span class="bu">map</span>(us_state_to_abbrev)</span>
@@ -371,7 +377,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>By setting a limit of 1B on the previous chart, we misrepresent the data and actual revenue of New Mexico over the past 20 years (32B). Instead we can plot as a logarithmic curve to further stratify and color distinguish prices.</p>
 <p>Here I have done so, setting the color range as just below and above the maximum logarithmic values.</p>
-<div id="cell-8" class="cell" data-execution_count="28">
+<div id="cell-8" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> usnr[[<span class="st">'state code'</span>, <span class="st">'Revenue'</span>]].groupby(<span class="st">"state code"</span>).<span class="bu">sum</span>().reset_index()</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'Revenue'</span>] <span class="op">=</span> np.log(data[<span class="st">'Revenue'</span>])</span>
@@ -389,7 +395,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>CDC taken geographic US regions: https://www.cdc.gov/nchs/hus/sources-definitions/geographic-region.htm</p>
-<div id="cell-10" class="cell" data-execution_count="29">
+<div id="cell-10" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>us_regions <span class="op">=</span> {</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"New England"</span>: [</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Connecticut"</span>, <span class="st">"Maine"</span>, <span class="st">"Massachusetts"</span>, <span class="st">"New Hampshire"</span>, <span class="st">"Rhode Island"</span>, <span class="st">"Vermont"</span></span>
@@ -421,17 +427,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb11-29"><a href="#cb11-29" aria-hidden="true" tabindex="-1"></a>    ]</span>
 <span id="cb11-30"><a href="#cb11-30" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-11" class="cell" data-execution_count="30">
+<div id="cell-11" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>timeseries_data <span class="op">=</span> usnr[[<span class="st">'Calendar Year'</span>, <span class="st">'State'</span>, <span class="st">'Revenue Type'</span>, <span class="st">'Mineral Lease Type'</span>, <span class="st">'Commodity'</span>, <span class="st">'Revenue'</span>]].copy()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-12" class="cell" data-execution_count="31">
+<div id="cell-12" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>td <span class="op">=</span> timeseries_data[[<span class="st">'Calendar Year'</span>, <span class="st">'State'</span>, <span class="st">'Revenue'</span>]].groupby([<span class="st">'Calendar Year'</span>, <span class="st">'State'</span>]).<span class="bu">sum</span>().reset_index()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-13" class="cell" data-execution_count="32">
+<div id="cell-13" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Was trying this out, but is not what I think I want</span></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="co"># td.pivot(index='State', columns='Calendar Year', values='Revenue')</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-14" class="cell" data-execution_count="33">
+<div id="cell-14" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>grid <span class="op">=</span> sns.FacetGrid(td, col<span class="op">=</span><span class="st">'State'</span>, col_wrap<span class="op">=</span><span class="dv">4</span>)</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>grid.<span class="bu">map</span>(plt.scatter,<span class="st">'Calendar Year'</span>, <span class="st">'Revenue'</span>)</span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>grid.set_ylabels(<span class="st">"Revenue (B)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -444,7 +450,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>Converting each state into its respective regions, we can also map revenue over time by region. I have chosen to exclude Moutain as New Mexico has a disproportionately high revenue, which is causing other data to appear quite small.</p>
-<div id="cell-16" class="cell" data-execution_count="34">
+<div id="cell-16" class="cell" data-execution_count="14">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>state_to_region <span class="op">=</span> {</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Connecticut"</span>: <span class="st">"New England"</span>,</span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Maine"</span>: <span class="st">"New England"</span>,</span>
@@ -499,10 +505,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb16-52"><a href="#cb16-52" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Washington"</span>: <span class="st">"Pacific"</span></span>
 <span id="cb16-53"><a href="#cb16-53" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-17" class="cell" data-execution_count="35">
+<div id="cell-17" class="cell" data-execution_count="15">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>timeseries_data[<span class="st">'region'</span>] <span class="op">=</span> timeseries_data[<span class="st">'State'</span>].<span class="bu">map</span>(state_to_region)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-18" class="cell" data-execution_count="36">
+<div id="cell-18" class="cell" data-execution_count="16">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>td <span class="op">=</span> timeseries_data.groupby([<span class="st">'Calendar Year'</span>, <span class="st">'region'</span>]).<span class="bu">sum</span>().reset_index()</span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="co"># td = td[td['region'] != 'Mountain']</span></span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>grid <span class="op">=</span> sns.FacetGrid(td[td[<span class="st">'region'</span>] <span class="op">!=</span> <span class="st">'Mountain'</span>], col<span class="op">=</span><span class="st">'region'</span>, col_wrap<span class="op">=</span><span class="dv">4</span>)</span>
@@ -515,7 +521,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<div id="cell-19" class="cell" data-execution_count="37">
+<div id="cell-19" class="cell" data-execution_count="17">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># td = td[td['region'] == 'Mountain']</span></span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>grid <span class="op">=</span> sns.FacetGrid(td[td[<span class="st">'region'</span>] <span class="op">==</span> <span class="st">'Mountain'</span>], col<span class="op">=</span><span class="st">'region'</span>, col_wrap<span class="op">=</span><span class="dv">4</span>)</span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>grid.<span class="bu">map</span>(plt.scatter,<span class="st">'Calendar Year'</span>, <span class="st">'Revenue'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -527,8 +533,42 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<section id="viewing-by-commodity-over-time" class="level1">
+<h1>Viewing by commodity over time</h1>
+<div id="cell-21" class="cell" data-execution_count="19">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>commodities <span class="op">=</span> usnr[[<span class="st">'Commodity'</span>, <span class="st">'Calendar Year'</span>, <span class="st">'Revenue'</span>]].groupby(by<span class="op">=</span>[<span class="st">'Commodity'</span>, <span class="st">'Calendar Year'</span>]).<span class="bu">sum</span>().reset_index()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="cell-22" class="cell" data-execution_count="30">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># filter by top 5 highest profiting</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>names <span class="op">=</span> usnr[[<span class="st">'Commodity'</span>, <span class="st">'Calendar Year'</span>, <span class="st">'Revenue'</span>]]<span class="op">\</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>    .groupby(by<span class="op">=</span>[<span class="st">'Commodity'</span>])<span class="op">\</span></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>        .<span class="bu">sum</span>()<span class="op">\</span></span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>            .reset_index()<span class="op">\</span></span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>                .sort_values(by<span class="op">=</span><span class="st">'Revenue'</span>, ascending<span class="op">=</span><span class="va">False</span>)<span class="op">\</span></span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>                    [:<span class="dv">5</span>]<span class="op">\</span></span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>                        [<span class="st">'Commodity'</span>].values</span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a>usnr1 <span class="op">=</span> usnr[usnr[<span class="st">'Commodity'</span>].isin(names)]</span>
+<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a>commodities <span class="op">=</span> usnr1[[<span class="st">'Commodity'</span>, <span class="st">'Calendar Year'</span>, <span class="st">'Revenue'</span>]].groupby(by<span class="op">=</span>[<span class="st">'Commodity'</span>, <span class="st">'Calendar Year'</span>]).<span class="bu">sum</span>().reset_index()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="cell-23" class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>sns.lineplot(commodities, x<span class="op">=</span><span class="st">'Calendar Year'</span>, y<span class="op">=</span><span class="st">'Revenue'</span>, hue<span class="op">=</span><span class="st">'Commodity'</span>)</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Revenue (B)"</span>)</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Calendar Year"</span>)</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Top 5 Commodity Revenue Across all of the US"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="eda-lucas_files/figure-html/cell-21-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
